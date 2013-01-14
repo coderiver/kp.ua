@@ -1,5 +1,9 @@
 .lteie8{
-	body{
-		background:red;
-	}
+
+}
+*+html .nav-top li, 
+*+html .nav-top a, 
+*+html .nav-spec li,
+*+html .nav-spec a {
+	display: inline;
 }

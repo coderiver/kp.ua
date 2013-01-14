@@ -1,86 +1,149 @@
-/*
-Syntax error: Invalid CSS after "   a": expected "{", was "}"
-        on line 341 of Z:/Work/Coderiver/kp.ua/sass/common.scss
-        from line 1 of Z:/Work/Coderiver/kp.ua/sass/screen.scss
+@charset "IBM866";
+img { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 10+ */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
 
-Backtrace:
-Z:/Work/Coderiver/kp.ua/sass/common.scss:341
-Z:/Work/Coderiver/kp.ua/sass/screen.scss:1
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1136:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1072:in `expected'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1067:in `tok!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:522:in `block'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:517:in `ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:579:in `block in declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1110:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:1110:in `rethrow'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:580:in `declaration_or_ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:542:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:531:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:523:in `block'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:517:in `ruleset'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:541:in `block_child'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:534:in `block_contents'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:70:in `stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/scss/parser.rb:27:in `parse'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:342:in `_to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:274:in `to_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:223:in `visit_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-C:/Ruby193/bin/compass:23:in `load'
-C:/Ruby193/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"   a\": expected \"{\", was \"}\"\A         on line 341 of Z:/Work/Coderiver/kp.ua/sass/common.scss\A         from line 1 of Z:/Work/Coderiver/kp.ua/sass/screen.scss"; }
+* { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
+
+body { font-family: Arial,sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body, html { height: 100%; }
+
+a img, fieldset { border: none; }
+
+input[type="submit"], button { cursor: pointer; }
+
+a { color: #00919e; }
+a:hover { text-decoration: none; }
+
+.l-wrapper { margin: 0 auto -206px; position: relative; min-height: 100%; height: auto !important; height: 100%; width: 1030px; -webkit-box-shadow: 0 0 17px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 17px rgba(0, 0, 0, 0.5); box-shadow: 0 0 17px rgba(0, 0, 0, 0.5); }
+
+.push { clear: both; height: 206px; }
+
+.clr { clear: both; }
+
+.header { padding-top: 48px; }
+
+.top-bar { position: fixed; top: 0; left: 50%; z-index: 1000; margin-left: -515px; padding: 0 15px 0 15px; height: 32px; line-height: 32px; width: 1000px; background: #565D65; }
+
+.top-bar__city { float: left; padding: 0 30px 0 20px; height: 32px; color: #fff; font: bold 14px/32px Tahoma, Arial, Helvetica, sans-serif; }
+
+.top-bar__region { float: left; height: 32px; color: #c1cdd9; font-size: 11px; line-height: 11px; background: #40454C; text-decoration: none; }
+.top-bar__region span, .top-bar__region i { display: inline-block; vertical-align: middle; }
+.top-bar__region i { margin: 5px 3px 5px 5px; background: url('../img/icons-s4060b9a1ac.png') 0 -68px no-repeat; width: 22px; height: 22px; }
+.top-bar__region span { width: 120px; text-decoration: underline; }
+.top-bar__region span:hover { text-decoration: none; }
+
+.top-bar__enter { float: right; }
+
+.header__banner { height: 90px; text-align: center; margin-bottom: 10px; }
+
+.header__widgets { overflow: hidden; padding: 0 20px 0 4px; font-size: 13px; }
+.header__widgets strong { display: block; color: #000; font-size: 16px; line-height: 14px; }
+
+.header__logo { float: left; margin-right: 20px; width: 365px; height: 77px; background: url(../img/logo.png) 0 0 no-repeat; }
+.header__logo:hover { opacity: 0.8; }
+
+.today { float: left; padding-top: 12px; margin-right: 34px; font-size: 13px; color: #565d66; }
+
+.weather { float: left; width: 100px; padding-top: 12px; color: #565d66; }
+
+.weather_sun-cloud { background: url(../img/weather.png) 100% 6px no-repeat; }
+
+.search { float: right; margin-top: 10px; padding: 5px; background: #f5f5f5; overflow: hidden; }
+
+.search__text { float: left; margin-right: -2px; padding: 0 10px; width: 261px; height: 28px; border: 1px solid #bec5cd; border-right: 0; }
+
+.search__submit { position: relative; float: right; width: 80px; height: 28px; line-height: 28px; color: #3f464c; font-size: 14px; border: 1px solid #bec5cd; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZmNmYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q2ZDdkOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcfcfc), color-stop(100%, #d6d7d9)); background-image: -webkit-linear-gradient(top, #fcfcfc 0%, #d6d7d9 100%); background-image: -moz-linear-gradient(top, #fcfcfc 0%, #d6d7d9 100%); background-image: -o-linear-gradient(top, #fcfcfc 0%, #d6d7d9 100%); background-image: linear-gradient(top, #fcfcfc 0%, #d6d7d9 100%); }
+.search__submit:hover { background: #f5f7f8; }
+.search__submit i { display: inline-block; margin-left: 6px; vertical-align: middle; background: url('../img/icons-s4060b9a1ac.png') 0 -134px no-repeat; width: 16px; height: 16px; }
+.search__submit input { position: absolute; opacity: 0; left: 0; top: 0; right: 0; bottom: 0; cursor: pointer; }
+
+.header__links { padding: 0 20px; }
+
+.header__mob-links { float: left; overflow: hidden; margin-right: 10px; }
+.header__mob-links span { float: left; margin-right: 10px; font-size: 13px; color: #565d66; }
+.header__mob-links a { float: left; margin-right: 10px; color: #000; font-size: 14px; font-weight: bold; text-transform: uppercase; text-decoration: none; }
+.header__mob-links a:hover { color: #40454c; text-decoration: underline; }
+.header__mob-links .mobile { padding: 0px 4px; border: 1px solid #bfc0c0; background: #f5f5f5; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+.header__mob-links .mobile:hover { text-decoration: none; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+
+.weather-webcam { position: relative; float: left; width: 144px; height: 22px; line-height: 22px; border: 1px solid #bcc4cc; font-size: 12px; color: #565d66; text-decoration: none; -webkit-border-radius: 12px; -moz-border-radius: 12px; -ms-border-radius: 12px; -o-border-radius: 12px; border-radius: 12px; }
+.weather-webcam:before { content: ""; position: absolute; top: -9px; left: 15px; background: url('../img/icons-s4060b9a1ac.png') 0 -256px no-repeat; width: 10px; height: 9px; }
+.weather-webcam i { display: inline-block; margin: 0 10px; background: url('../img/icons-s4060b9a1ac.png') 0 -182px no-repeat; width: 13px; height: 9px; }
+
+.header__soc { float: right; overflow: hidden; line-height: 24px; }
+.header__soc span { float: left; margin-right: 15px; font-size: 12px; color: #989898; }
+
+.header__nav-wrap { padding: 0 20px; }
+
+.nav-top { padding-top: 5px; }
+.nav-top li { display: inline-block; margin-right: 5px; }
+.nav-top a { color: #565d66; display: inline-block; font-size: 11px; padding: 0 4px; height: 22px; line-height: 22px; text-decoration: none; text-transform: uppercase; }
+.nav-top a:hover { color: #78838f; text-decoration: underline; }
+.nav-top .nav-top__photo, .nav-top .nav-top__video { border: 1px solid #d3dce6; background: #f5f5f5; margin-right: 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+.nav-top .nav-top__photo:hover, .nav-top .nav-top__video:hover { opacity: .8; }
+.nav-top .nav-top__video { margin: 0 10px 0 3px; }
+.nav-top i { margin-right: 7px; }
+
+.nav-spec { padding-top: 11px; }
+.nav-spec li { display: inline-block; margin-right: -2px; }
+.nav-spec a { display: inline-block; padding: 0 9px; height: 22px; line-height: 22px; text-decoration: none; color: #fff; -webkit-border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; -ms-border-radius: 5px 5px 0 0; -o-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; }
+
+.nav-spec__red { background: #bf1c0b; -webkit-box-shadow: inset 0px -3px 3px 0px #990802; -moz-box-shadow: inset 0px -3px 3px 0px #990802; box-shadow: inset 0px -3px 3px 0px #990802; }
+.nav-spec__red:hover { background: #cc493c; }
+
+.nav-spec__blue { background: #00769d; -webkit-box-shadow: inset 0px -3px 3px 0px #00446d; -moz-box-shadow: inset 0px -3px 3px 0px #00446d; box-shadow: inset 0px -3px 3px 0px #00446d; }
+.nav-spec__blue:hover { background: #3391b1; }
+
+.nav-spec__green { background: #197b30; -webkit-box-shadow: inset 0px -3px 3px 0px #084d18; -moz-box-shadow: inset 0px -3px 3px 0px #084d18; box-shadow: inset 0px -3px 3px 0px #084d18; }
+.nav-spec__green:hover { background: #479559; }
+
+.nav-spec__black { background: #40454c; -webkit-box-shadow: inset 0px -3px 3px 0px #0d0e0f; -moz-box-shadow: inset 0px -3px 3px 0px #0d0e0f; box-shadow: inset 0px -3px 3px 0px #0d0e0f; }
+.nav-spec__black:hover { background: #666a70; }
+
+.nav-spec__purple { background: #7100e5; -webkit-box-shadow: inset 0px -3px 3px 0px #4c009a; -moz-box-shadow: inset 0px -3px 3px 0px #4c009a; box-shadow: inset 0px -3px 3px 0px #4c009a; }
+.nav-spec__purple:hover { background: #8d33ea; }
+
+.nav-spec__azure { background: #009a91; -webkit-box-shadow: inset 0px -3px 3px 0px #006761; -moz-box-shadow: inset 0px -3px 3px 0px #006761; box-shadow: inset 0px -3px 3px 0px #006761; }
+.nav-spec__azure:hover { background: #33aea7; }
+
+.nav-spec__yellow { background: #eca60f; -webkit-box-shadow: inset 0px -3px 3px 0px #de7804; -moz-box-shadow: inset 0px -3px 3px 0px #de7804; box-shadow: inset 0px -3px 3px 0px #de7804; }
+.nav-spec__yellow:hover { background: #f0b83f; }
+
+.btn { text-decoration: none; }
+
+.btn_gray { display: inline-block; padding: 0 10px; height: 22px; line-height: 22px; color: #fff; border: 1px solid #4b5158; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzhhOTZhMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzY2NzA3YSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8a96a2), color-stop(100%, #66707a)); background-image: -webkit-linear-gradient(top, #8a96a2 0%, #66707a 100%); background-image: -moz-linear-gradient(top, #8a96a2 0%, #66707a 100%); background-image: -o-linear-gradient(top, #8a96a2 0%, #66707a 100%); background-image: linear-gradient(top, #8a96a2 0%, #66707a 100%); }
+.btn_gray:hover { background: #8a96a2; }
+
+.soc { float: left; margin-right: 3px; }
+
+.soc_ig { background: url('../img/icons-s4060b9a1ac.png') 0 0 no-repeat; width: 24px; height: 24px; }
+
+.soc_gp { background: url('../img/icons-s4060b9a1ac.png') 0 -34px no-repeat; width: 24px; height: 24px; }
+
+.soc_fb { background: url('../img/icons-s4060b9a1ac.png') 0 -275px no-repeat; width: 24px; height: 24px; }
+
+.soc_odn { background: url('../img/icons-s4060b9a1ac.png') 0 -222px no-repeat; width: 24px; height: 24px; }
+
+.soc_tw { background: url('../img/icons-s4060b9a1ac.png') 0 -100px no-repeat; width: 24px; height: 24px; }
+
+.soc_vk { background: url('../img/icons-s4060b9a1ac.png') 0 -309px no-repeat; width: 24px; height: 24px; }
+
+.icon { display: inline-block; }
+
+.icon_photo { background: url('../img/icons-s4060b9a1ac.png') 0 -201px no-repeat; width: 12px; height: 11px; }
+
+.icon_video { background: url('../img/icons-s4060b9a1ac.png') 0 -160px no-repeat; width: 13px; height: 12px; }
+
+img { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 10+ */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
+
+/* default layout */
+.l { width: 100%; display: inline-block; }
+.l .l-col1 { float: left; width: 20%; }
+.l .l-col2 { float: right; width: 70%; }
+
+img { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 10+ */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
+
+* + html .nav-top li, * + html .nav-top a, * + html .nav-spec li, * + html .nav-spec a { display: inline; }
