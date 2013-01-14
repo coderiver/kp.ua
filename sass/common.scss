@@ -414,6 +414,18 @@ a{
       background: #f0b83f;
    }
 }
+.nav {
+   @include background-image(linear-gradient(top, #77838f 5%, #727e8a 100%));
+   li {
+      display: inline-block;
+      padding-top: 3px;
+   }
+   a {
+      display: inline-block;
+      height: 28px;
+      line-height: 25px;
+   }
+}
 // blocks
 
 .btn {
