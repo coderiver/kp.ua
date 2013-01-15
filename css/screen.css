@@ -121,12 +121,13 @@ a:hover { text-decoration: none; }
 .nav-spec__yellow:hover { background: #f0b83f; }
 
 .nav { padding-left: 20px; overflow: hidden; -webkit-box-shadow: inset 0px 7px 7px 0px #8d99a5; -moz-box-shadow: inset 0px 7px 7px 0px #8d99a5; box-shadow: inset 0px 7px 7px 0px #8d99a5; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI1JSIgc3RvcC1jb2xvcj0iIzc3ODM4ZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzcyN2U4YSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(5%, #77838f), color-stop(100%, #727e8a)); background-image: -webkit-linear-gradient(top, #77838f 5%, #727e8a 100%); background-image: -moz-linear-gradient(top, #77838f 5%, #727e8a 100%); background-image: -o-linear-gradient(top, #77838f 5%, #727e8a 100%); background-image: -ms-linear-gradient(top, #77838f 5%, #727e8a 100%); background-image: linear-gradient(top, #77838f 5%, #727e8a 100%); }
-.nav li { float: left; margin-right: -3px; padding: 3px 6px 0 4px; border-right: 1px solid #55667a; -webkit-box-shadow: inset -1px 0px 0 #a5b1bd; -moz-box-shadow: inset -1px 0px 0 #a5b1bd; box-shadow: inset -1px 0px 0 #a5b1bd; }
-.nav li:first-child { border-left: 1px solid #55667a; -webkit-box-shadow: inset 1px 0px 0 #a5b1bd; -moz-box-shadow: inset 1px 0px 0 #a5b1bd; box-shadow: inset 1px 0px 0 #a5b1bd; }
-.nav li:hover { background: #838f9b; }
-.nav li:hover a { text-decoration: underline; }
-.nav a { display: block; height: 28px; line-height: 24px; color: #fff; font-size: 14px; text-decoration: none; padding: 5px 8px 0px 10px; }
-.nav .active { color: #000; background: #fff; font-weight: bold; -webkit-box-shadow: 3px 1px 3px #282c30; -moz-box-shadow: 3px 1px 3px #282c30; box-shadow: 3px 1px 3px #282c30; -webkit-border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; -ms-border-radius: 5px 5px 0 0; -o-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; }
+.nav ul { list-style: none; }
+.nav li { float: left; }
+.nav li:first-child { border-left: 1px solid #55667a; }
+.nav a { float: left; height: 30px; line-height: 30px; padding: 0 13px; color: #fff; text-decoration: none; font-size: 15px; border-right: 1px solid #55667a; border-left: 1px solid #a5b1bd; }
+.nav a:hover { background: #838f9b; }
+.nav a.active { color: #000; font-weight: bold; padding: 0 4px; }
+.nav a.active span { background: #fff; -webkit-box-shadow: 3px 1px 3px #282c30; -moz-box-shadow: 3px 1px 3px #282c30; box-shadow: 3px 1px 3px #282c30; -webkit-border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; -ms-border-radius: 5px 5px 0 0; -o-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; display: block; height: 27px; line-height: 22px; position: relative; top: 3px; padding: 0 9px; }
 
 .btn { text-decoration: none; }
 
@@ -206,9 +207,13 @@ a:hover { text-decoration: none; }
 .footer__advert strong { display: block; font-size: 11px; border-bottom: 1px solid #989898; }
 .footer__advert a { color: #c2c2c2; }
 
-.footer__news { clear: both; padding: 3px 0 5px; border-top: 1px solid #565d66; }
-.footer__news ul { overflow: hidden; }
-.footer__news li { float: left; margin-right: 8px; color: #fff; }
+.footer__news { clear: both; padding: 3px 0 5px; border-top: 1px solid #565d66; line-height: 1.3; font-family: Tahoma,sans-serif; font-size: 12px; }
+.footer__news dl { margin: 6px 0; }
+.footer__news dt { color: #fff; }
+.footer__news dd { display: inline; }
+.footer__news ul { overflow: hidden; display: inline; }
+.footer__news dt { display: inline; }
+.footer__news li { display: inline-block; margin-right: 4px; color: #fff; }
 .footer__news a { color: #c2c2c2; }
 
 .l-wrapper { margin-bottom: -609px; position: relative; min-height: 100%; height: auto !important; height: 100%; }
