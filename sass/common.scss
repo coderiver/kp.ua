@@ -26,7 +26,6 @@
 
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
-img{@extend %gray;}
 body{
 	font: {
 	    family: Arial,sans-serif;
@@ -82,7 +81,7 @@ a{
    }
 }
 .l-wrapper {
-   margin: 0 auto -206px;
+   margin: 0 auto -606px;
    position: relative;
    min-height: 100%;
    height: auto !important;
@@ -92,7 +91,7 @@ a{
 } 
 .push {
    clear: both;
-   height: 206px;
+   height: 606px;
 }
 .clr {
     clear: both;
@@ -308,6 +307,9 @@ a{
       font-size: 12px;
       color: #989898;
    }
+   .soc {
+       margin-right: 3px;
+   }
 }
 .header__nav-wrap {
 }
@@ -472,7 +474,6 @@ a{
 } 
 .soc {
    float: left;
-   margin-right: 3px;
 }
 .soc_ig {@include sized-sprite($icons, ig); }
 .soc_gp {@include sized-sprite($icons, gp); }
@@ -492,7 +493,10 @@ a{
    position: relative;
    width: 1030px;
    margin: 0 auto;
+   padding: 18px 0px 12px;
    overflow: hidden;
+   font-size: 12px;
+   @include box-shadow(inset 0px 5px 6px 0px #40454c);
    @include background-image(linear-gradient(top, #626a74 5%, #40454c 35%));
 }
 .footer__widgets {
@@ -503,4 +507,74 @@ a{
 .footer__logo {
    display: block;
    @include sized-sprite($icons, logo-f);
+}
+.footer__newspaper {
+   padding: 12px 0;
+   color: #fff;
+   a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+          text-decoration: underline;
+      }
+   }
+   span {
+       padding: 0 2px;
+   }
+}
+.calendar {
+   width: 155px;
+   height: 197px;
+   background: url(../img/calendar.png) 0 0 no-repeat;
+}
+.footer__soc {
+   overflow: hidden;
+   margin-bottom: 4px;
+   padding: 5px 0 18px;
+   border-bottom: 1px solid #b4b6b9;
+   .soc {
+      margin-right: 1px;
+   }
+   span {
+       color: #b5b7ba;
+       display: block;
+   }
+}
+.footer__location {
+   color: #b5b7ba;
+   margin-bottom: 14px;
+   a {
+       color: #fff;
+       font-weight: bold;
+   }
+}
+.footer__age {
+   position: relative;
+   padding: 6px 50px 6px 15px;
+   background: #525963;
+   font-size: 11px;
+   color: #c4ceda;
+   span {
+       position: absolute;
+       top: 50%;
+       right: 10px;
+       margin-top: -14px;
+       width: 28px;
+       height: 28px;
+       line-height: 28px;
+       text-align: center;
+       color: #fff;
+       font-weight: bold;
+       font-size: 13px;
+       background: #e50b00;
+       @include border-radius(50%);
+   }
+}
+.footer__counters {
+   width: 940px;
+   margin-left: 19px;
+   padding: 10px 20px;
+   background: #fff;
+   @include border-radius(5px);
+   clear: both;
 }
