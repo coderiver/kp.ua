@@ -277,7 +277,7 @@ a:hover { text-decoration: none; }
 .news-sidebar img { float: left; margin-right: 10px; }
 .news-sidebar p { color: #000; overflow: hidden; }
 
-.yandex-direct, .bank-widget { margin: 30px 0; }
+.yandex-direct, .bank-widget, .books-widget { margin: 30px 0; }
 
 .lteie8 .nav { background: #727e8a; }
 .lteie8 .footer { background: #626a74; }
