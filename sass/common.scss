@@ -310,10 +310,9 @@ a{
    }
 }
 .header__nav-wrap {
-   padding: 0 20px;
 }
 .nav-top {
-   padding-top: 5px;
+   padding: 5px 20px 0;
    li {
       display: inline-block;
       margin-right: 5px;
@@ -350,7 +349,7 @@ a{
    }
 }
 .nav-spec {
-   padding-top: 11px;
+   padding: 11px 20px 0;
    li {
       display: inline-block;
       margin-right: -2px;
@@ -415,15 +414,42 @@ a{
    }
 }
 .nav {
+   padding-left: 20px;
+   overflow: hidden;
+   @include box-shadow(inset 0px 7px 7px 0px #8d99a5);
    @include background-image(linear-gradient(top, #77838f 5%, #727e8a 100%));
    li {
       display: inline-block;
-      padding-top: 3px;
+      margin-right: -3px;
+      padding: 3px 6px 0 4px;
+      border-right: 1px solid #55667a;
+      @include box-shadow(inset -1px 0px 0  #a5b1bd);
+      &:first-child {
+         border-left: 1px solid #55667a;
+         @include box-shadow(inset 1px 0px 0  #a5b1bd);
+      }
+      &:hover {
+         background: #838f9b;
+         a {
+            text-decoration: underline
+         }
+      }
    }
    a {
       display: inline-block;
       height: 28px;
-      line-height: 25px;
+      line-height: 24px; 
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+      padding: 5px 8px 0px 10px;
+   }
+   .active {
+      color: #000;
+      background: #fff;
+      font-weight: bold;
+      @include box-shadow(3px 1px 3px #282c30);
+      @include border-radius(5px 5px 0 0);
    }
 }
 // blocks
