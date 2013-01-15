@@ -46,6 +46,22 @@ body, html {
 a img,fieldset{
 	border:none;
 	}
+input, textarea, select,
+h1,h2,h3,h4,h5,h6,a,span,a:focus {
+    outline: none;
+}
+ul,ol {
+    list-style-type: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+input[type='submit']::-moz-focus-inner{
+   padding:0;
+   border:0
+}
 input[type="submit"], button {
    cursor:pointer;
 }
@@ -81,8 +97,8 @@ a{
    }
 }
 .l-wrapper {
-   margin: 0 auto -606px;
-   position: relative;
+   margin: 0 auto -603px;
+   position: relative; 
    min-height: 100%;
    height: auto !important;
    height: 100%;
@@ -91,7 +107,7 @@ a{
 } 
 .push {
    clear: both;
-   height: 606px;
+   height: 603px;
 }
 .clr {
     clear: both;
@@ -315,9 +331,10 @@ a{
 }
 .nav-top {
    padding: 5px 20px 0;
+   overflow: hidden;
    li {
-      display: inline-block;
-      margin-right: 5px;
+      float: left;
+      margin-right: 8px;
    }
    a {
       color: #565d66;
@@ -352,12 +369,13 @@ a{
 }
 .nav-spec {
    padding: 11px 20px 0;
+   overflow: hidden;
    li {
-      display: inline-block;
-      margin-right: -2px;
+      float: left;
+      margin-right: 1px;
    }
    a {
-      display: inline-block;
+      display: block;
       padding: 0 9px;
       height: 22px;
       line-height: 22px;
@@ -421,7 +439,7 @@ a{
    @include box-shadow(inset 0px 7px 7px 0px #8d99a5);
    @include background-image(linear-gradient(top, #77838f 5%, #727e8a 100%));
    li {
-      display: inline-block;
+      float: left;
       margin-right: -3px;
       padding: 3px 6px 0 4px;
       border-right: 1px solid #55667a;
@@ -438,7 +456,7 @@ a{
       }
    }
    a {
-      display: inline-block;
+      display: block;
       height: 28px;
       line-height: 24px; 
       color: #fff;
@@ -465,6 +483,7 @@ a{
    height: 22px;
    line-height: 22px;
    color: #fff;
+   font-size: 13px;
    border: 1px solid #4b5158;
    @include border-radius(3px);
    @include background-image(linear-gradient(top, #8a96a2 0%, #66707a 100%));
@@ -538,6 +557,7 @@ a{
    span {
        color: #b5b7ba;
        display: block;
+       margin-bottom: 4px;
    }
 }
 .footer__location {
@@ -573,8 +593,96 @@ a{
 .footer__counters {
    width: 940px;
    margin-left: 19px;
-   padding: 10px 20px;
+   padding: 5px 20px;
    background: #fff;
    @include border-radius(5px);
    clear: both;
+}
+
+.footer__main {
+    float: left;
+    width: 820px;
+}
+.footer__top-nav {
+   margin: -4px 0 16px;
+   overflow: hidden;
+   li {
+      float: left;
+      margin-right: 6px;
+      list-style-type: none;
+   }
+   a {
+      font-size: 14px;
+      color: #fff;
+      &:hover {
+      text-decoration: underline;
+      }
+   }
+}
+.footer__nav {
+   overflow: hidden;
+   li {
+      float: left;
+      margin: 0 2px 2px 0;
+      list-style-type: none;
+   }
+   a {
+      display: block;
+      padding: 5px 0px 8px 0px;
+      width: 160px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+      background: #78838f;
+      @include border-radius(5px);
+   }
+}
+.footer__info {
+   padding-top: 10px;
+   overflow: hidden;
+   color: #fff;
+   line-height: 14px;
+   div {
+      width: 49%;
+      float: left;
+      padding-left: 1%;
+   }
+   p {
+       padding-bottom: 14px;
+   }
+   a {
+       color: #c2c2c2; 
+   }
+}
+.footer__advert {
+   float: right;
+   padding: 20px 0 25px;
+   width: 49%;
+   text-align: right;
+   color: #fff;
+   strong {
+      display: block;
+      font-size: 11px;
+      border-bottom: 1px solid #989898;
+   }
+   a {
+      color: #c2c2c2; 
+   }
+}
+.footer__news {
+   clear: both;
+   padding: 3px 0 5px;
+   border-top: 1px solid #565d66;
+   ul {
+       overflow: hidden;
+   }
+   li {
+      float: left;
+      margin-right: 8px;
+      color: #fff;
+   }
+   a {
+       color: #c2c2c2;
+   }
 }
