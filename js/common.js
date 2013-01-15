@@ -9,4 +9,13 @@ $(document).ready(function() {
          $('.top-bar').css('margin-top', '30px');
      }
    });
+   // tab social 
+   $(".js-tab-soc-1").show();
+   $(".soc-tabs li").click(function(){
+      $(".soc-tabs li").removeClass("active");
+      $(this).addClass("active");
+      var tab_index = $(this).attr("data-tab");
+      $(".tab-soc-cont").hide();
+      $(tab_index).show();
+   });
 });

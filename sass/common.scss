@@ -495,6 +495,10 @@ a{
 }
 .icon_photo {@include sized-sprite($icons, photo) };
 .icon_video {@include sized-sprite($icons, video) };
+.icon_fb {@include sized-sprite($icons, fb2); }
+.icon_odn {@include sized-sprite($icons, odn2); }
+.icon_tw {@include sized-sprite($icons, tw2); }
+.icon_vk {@include sized-sprite($icons, vk2); }
 // ---------------------------------- END  Blocks ---------------------------------------- //
 
 // ------------------------------------ Footer ------------------------------------------- //
