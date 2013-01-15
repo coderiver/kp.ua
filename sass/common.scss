@@ -474,15 +474,33 @@ a{
    float: left;
    margin-right: 3px;
 }
-.soc_ig {@include sized-sprite($icons, ig) };
-.soc_gp {@include sized-sprite($icons, gp) };
-.soc_fb {@include sized-sprite($icons, fb) };
-.soc_odn {@include sized-sprite($icons, odn) };
-.soc_tw {@include sized-sprite($icons, tw) };
-.soc_vk {@include sized-sprite($icons, vk) };
+.soc_ig {@include sized-sprite($icons, ig); }
+.soc_gp {@include sized-sprite($icons, gp); }
+.soc_fb {@include sized-sprite($icons, fb); }
+.soc_odn {@include sized-sprite($icons, odn); }
+.soc_tw {@include sized-sprite($icons, tw); }
+.soc_vk {@include sized-sprite($icons, vk); }
 
 .icon {
    display: inline-block;
 }
 .icon_photo {@include sized-sprite($icons, photo) };
 .icon_video {@include sized-sprite($icons, video) };
+
+// footer
+.footer {
+   position: relative;
+   width: 1030px;
+   margin: 0 auto;
+   overflow: hidden;
+   @include background-image(linear-gradient(top, #626a74 5%, #40454c 35%));
+}
+.footer__widgets {
+   float: left;
+   width: 155px;
+   padding: 0 19px;
+}
+.footer__logo {
+   display: block;
+   @include sized-sprite($icons, logo-f);
+}
