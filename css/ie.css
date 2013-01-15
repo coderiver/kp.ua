@@ -1,2 +1,11 @@
 .lteie8 .nav { background: #727e8a; }
 .lteie8 .footer { background: #626a74; }
+.lteie8 .search__text { line-height: 30px; }
+.lteie8 .search span { display: none; }
+
+* html .top-bar { position: absolute; }
+* html .nav-spec a, * html .nav-spec li, * html .nav a, * html .nav li { display: inline; }
+* html .header__links { clear: both; }
+* html .header__widgets { margin-bottom: 20px; }
+* html .nav { height: 27px; }
+* html .search { background: none; }

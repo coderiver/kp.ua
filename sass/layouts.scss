@@ -1,17 +1,30 @@
 @import "base";
-
+.l-wrapper {
+   margin-bottom: -609px;
+   position: relative; 
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+} 
+.push {
+   clear: both;
+   height: 609px;
+}
+.l-container {
+   margin: 0 auto;
+   width: 1030px;
+   @include box-shadow(0 0 17px rgba(0,0,0,0.5));
+}
 /* default layout */
-.l{
-	width: 100%;
-	display: inline-block;
-
-	.l-col1{
+.l-cols {
+	padding: 0 20px;
+	overflow: hidden;
+	.l-col-left {
 		float:left;
-		width: 20%;
+		width: 675px;
 	}
-
-	.l-col2{
+	.l-col-right {
 		float:right;
-		width: 70%;
+		width: 300%;
 	}
 }

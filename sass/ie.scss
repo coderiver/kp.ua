@@ -5,4 +5,34 @@
    .footer {
        background: #626a74;
    }
+   .search__text {
+       line-height: 30px;
+   }
+   .search {
+      span {
+          display: none;
+      }
+   }
+}
+* html {
+   .top-bar {
+       position: absolute;
+   }
+   .nav-spec, .nav {
+      a, li {
+          display: inline;
+      }
+   }
+   .header__links {
+       clear: both;
+   }
+   .header__widgets {
+       margin-bottom: 20px;
+   }
+   .nav {
+      height: 27px;
+   }
+   .search {
+      background: none;
+   }
 }

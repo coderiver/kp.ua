@@ -1,38 +1,13 @@
 @import "base";
-// =======Sprites
-// .whatever{
-// 	@include sized-sprite($icons, badge_hit);
-// 	@include retina{
-// 		@include sized-sprite($icons, badge_new);
-// 	}
-// }
-// =======animation example
-// @include keyframes(rotate) {
-//    from {
-//       @include rotate(0);
-//    }
-//    to {
-//       @include rotate(360);
-//    }
-// }
-// body:hover{
-// 	@include animation(rotate 200s linear infinite);
-// }
-// ========gradient example
-// body{
-// @include background-image(linear-gradient(#232323, #5c5c5c));
-// }
-
-
-
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
 body{
 	font: {
-	    family: Arial,sans-serif;
+	    family: Arial, Helvetica, sans-serif;
 	    weight: normal;
 	    size: 12px;
 	  	}
 	line-height:1.4;
+   min-width: 1030px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header,
@@ -96,27 +71,39 @@ a{
       }
    }
 }
-.l-wrapper {
-   margin: 0 auto -603px;
-   position: relative; 
-   min-height: 100%;
-   height: auto !important;
-   height: 100%;
-   width: 1030px;
-   @include box-shadow(0 0 17px rgba(0,0,0,0.5));
-} 
-.push {
-   clear: both;
-   height: 603px;
-}
 .clr {
     clear: both;
 }
-// Header //
+.title-l-1 {
+   font-size: 56px;
+   font-weight: normal;
+   color: #40454c;
+   border-bottom: 1px solid #b3b3b3;
+   font-family: Tahoma, Arial, Helvetica, sans-serif;
+   @include background-image(linear-gradient(top, #fff 75%, #ebebeb 100%));
+}
+.title-l-2 {
+   padding-bottom: 4px;
+   margin-top: 13px;
+   border-bottom: 1px solid #78838f;
+   font: bold 24px/1em Arial, Helvetica, sans-serif;
+}
+// ---------------------------------- Top banner ------------------------------------------- //
+.top-banner {
+   height: 30px;
+   background: #ccc;
+}
+// ------------------------------ END Top banner ------------------------------------------- //
+
+// ---------------------------------- Header ------------------------------------------- //
 .header {
    padding-top: 48px;
 }
+.header_scroll {
+    padding-top: 78px;
+}
 .top-bar {
+   margin-top: 30px;
    position: fixed;
    top: 0;
    left: 50%;
@@ -472,7 +459,9 @@ a{
       @include border-radius(5px 5px 0 0);
    }
 }
-// blocks
+// ------------------------------- END Header ------------------------------------------ //
+
+// ---------------------------------- Blocks ------------------------------------------- //
 
 .btn {
     text-decoration: none;
@@ -506,8 +495,9 @@ a{
 }
 .icon_photo {@include sized-sprite($icons, photo) };
 .icon_video {@include sized-sprite($icons, video) };
+// ---------------------------------- END  Blocks ---------------------------------------- //
 
-// footer
+// ------------------------------------ Footer ------------------------------------------- //
 .footer {
    position: relative;
    width: 1030px;
@@ -601,6 +591,7 @@ a{
 
 .footer__main {
     float: left;
+    padding-bottom: 6px;
     width: 820px;
 }
 .footer__top-nav {
@@ -686,3 +677,4 @@ a{
        color: #c2c2c2;
    }
 }
+// ---------------------------------- END Footer ------------------------------------------ //
