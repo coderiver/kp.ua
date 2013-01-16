@@ -18,4 +18,8 @@ $(document).ready(function() {
       $(".tab-soc-cont").hide();
       $(tab_index).show();
    });
+   // ----
+   $(".archive-nav__region").click(function(){
+      $(this).next().slideDown();
+   });
 });
