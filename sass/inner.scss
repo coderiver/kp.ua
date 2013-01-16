@@ -371,3 +371,36 @@
         margin-bottom: 8px;
     }
 }
+.press-nav {
+    ul {
+        padding: 0 10px;
+        border: 1px solid #dadada;
+        @include background-image(linear-gradient(top, #fff 5%, #f5f5f5 100%));
+    }
+    li {
+        padding: 8px 5px;
+        border-top: 1px solid #989898;
+        
+        font-size: 14px;
+        &:first-child {
+            border-top: 0;
+        }
+    }
+    a {
+        color: #40454c;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.press-nav__title {
+    display: inline-block;
+    padding: 0 15px 0 10px;
+    height: 29px;
+    color: #fff;
+    text-transform: uppercase;
+    font: bold 15px/29px Tahoma, Arial, sans-serif;
+    text-shadow: 3px 3px 2px #C56D00;
+    @include background-image(linear-gradient(top, #ea9f0e 5%, #dd7b00 100%));
+}
