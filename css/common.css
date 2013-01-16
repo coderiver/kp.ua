@@ -166,6 +166,28 @@ a:hover { text-decoration: none; }
 .pagin a, .pagin span { padding: 0 5px; color: #637681; font-weight: bold; font-size: 11px; text-decoration: none; }
 .pagin strong { display: block; margin-bottom: 3px; color: #858f9a; font-weight: normal; }
 
+.form { overflow: hidden; padding: 15px 18px 0px 20px; border: 1px solid #dadada; background: #f5f5f5; }
+
+.form__left { float: left; width: 224px; }
+
+.form__right { float: right; width: 390px; }
+
+.input-text { margin-bottom: 9px; }
+.input-text label { display: block; font-size: 12px; padding-bottom: 4px; }
+.input-text label:before { content: "• "; color: #d50028; font-family: Tahoma, Arial, sans-serif; }
+.input-text input, .input-text textarea { border: 1px solid #7f7f7f; background: #fff; font-size: 14px; color: #000; width: 204px; padding: 4px 9px 5px 9px; -webkit-box-shadow: inset 3px 3px 5px #dfdfdf; -moz-box-shadow: inset 3px 3px 5px #dfdfdf; box-shadow: inset 3px 3px 5px #dfdfdf; font-family: Tahoma, Arial, sans-serif; }
+.input-text input:focus, .input-text textarea:focus { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.input-text textarea { resize: vertical; width: 369px; min-height: 60px; }
+
+.form__note { padding-top: 10px; font-size: 12px; color: #989898; font-family: Tahoma, Arial, sans-serif; }
+.form__note span { color: #d50028; }
+
+.captcha { margin-bottom: 14px; background: #fff; border: 1px solid #e1e1e1; padding: 6px 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+.captcha .input-text { display: inline-block; width: 106px; vertical-align: middle; }
+.captcha .input-text input { width: 86px; }
+.captcha span { display: inline-block; width: 77px; vertical-align: middle; }
+.captcha img { vertical-align: middle; }
+
 .footer { position: relative; width: 1030px; margin: 0 auto; padding: 18px 0px 12px; overflow: hidden; font-size: 12px; -webkit-box-shadow: inset 0px 5px 6px 0px #40454c; -moz-box-shadow: inset 0px 5px 6px 0px #40454c; box-shadow: inset 0px 5px 6px 0px #40454c; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI1JSIgc3RvcC1jb2xvcj0iIzYyNmE3NCIvPjxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjNDA0NTRjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(5%, #626a74), color-stop(35%, #40454c)); background-image: -webkit-linear-gradient(top, #626a74 5%, #40454c 35%); background-image: -moz-linear-gradient(top, #626a74 5%, #40454c 35%); background-image: -o-linear-gradient(top, #626a74 5%, #40454c 35%); background-image: -ms-linear-gradient(top, #626a74 5%, #40454c 35%); background-image: linear-gradient(top, #626a74 5%, #40454c 35%); }
 
 .footer__widgets { float: left; width: 155px; padding: 0 19px; }
