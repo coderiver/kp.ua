@@ -343,3 +343,31 @@
     }
     
 }
+.articles-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.article {
+    margin-bottom: 12px;
+    overflow: hidden;
+    img {
+        float: left;
+        margin: 4px 10px 0 0;
+    }
+    a {
+        color: #1a5ca7;
+        font-size: 18px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    h5 {
+        font-size: 18px;
+        line-height: 1.2em;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 8px;
+    }
+}

@@ -1,12 +1,10 @@
 $(document).ready(function() {
    $(window).scroll(function() {
       if ($('body').scrollTop() > 30) {
-         $('.header').removeClass('.header_scroll');
-         $('.top-bar').css('margin-top', '0');
+         $('.top-bar').addClass('top-bar_act');
       }
       else {
-         $('.header').addClass('header_scroll');
-         $('.top-bar').css('margin-top', '30px');
+         $('.top-bar').removeClass('top-bar_act');
      }
    });
    // tab social 

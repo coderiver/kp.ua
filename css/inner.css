@@ -89,3 +89,12 @@
 .archive-item a { font-size: 16px; color: #565d66; text-decoration: none; }
 .archive-item span { display: block; margin-bottom: 12px; }
 .archive-item img { border: 1px solid #989898; box-shadow: -2px 2px 2px 0px #d9d9d9; }
+
+.articles-title { font-size: 18px; margin: 10px 0; }
+
+.article { margin-bottom: 12px; overflow: hidden; }
+.article img { float: left; margin: 4px 10px 0 0; }
+.article a { color: #1a5ca7; font-size: 18px; text-decoration: none; }
+.article a:hover { text-decoration: underline; }
+.article h5 { font-size: 18px; line-height: 1.2em; margin-bottom: 20px; }
+.article p { margin-bottom: 8px; }

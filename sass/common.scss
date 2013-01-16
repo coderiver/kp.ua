@@ -96,24 +96,19 @@ a{
 // ------------------------------ END Top banner ------------------------------------------- //
 
 // ---------------------------------- Header ------------------------------------------- //
-.header {
-   padding-top: 48px;
-}
-.header_scroll {
-    padding-top: 78px;
-}
 .top-bar {
-   margin-top: 30px;
-   position: fixed;
-   top: 0;
-   left: 50%;
-   z-index: 1000;
-   margin-left: -515px;
    padding: 0 15px 0 15px;
    height: 32px;
    line-height: 32px;
    width: 1000px;
    background: #565D65;
+}
+.top-bar_act {
+   position: fixed;
+   left: 50%;
+   top: 0;
+   z-index: 1000;
+   margin-left: -515px;
 }
 .top-bar__city {
    float: left;
@@ -153,7 +148,7 @@ a{
 .header__banner {
    height: 90px;
    text-align: center;
-   margin-bottom: 10px;
+   margin: 10px 0;
 }
 
 .header__widgets {
@@ -544,6 +539,25 @@ a{
 .icon_tw {@include sized-sprite($icons, tw2); }
 .icon_vk {@include sized-sprite($icons, vk2); }
 .icon_arr2 {@include sized-sprite($icons, arr2); }
+
+.pagin {
+   font-size: 12px;
+   font-family: Tahoma,Arial,sans-serif;;
+   a, span {
+      padding: 0 5px;
+      color: #637681;
+      font-weight: bold;
+      font-size: 11px;
+      text-decoration: none;
+   }
+   strong {
+       display: block;
+       margin-bottom: 3px;
+       color: #858f9a;
+       font-weight: normal;
+   }
+}
+
 // ---------------------------------- END  Blocks ---------------------------------------- //
 
 // ------------------------------------ Footer ------------------------------------------- //
