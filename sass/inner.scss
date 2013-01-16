@@ -358,6 +358,9 @@
         color: #1a5ca7;
         font-size: 18px;
         text-decoration: none;
+        display: block;
+        @extend %clr;
+        margin-bottom: 5px;
         &:hover {
             text-decoration: underline;
         }
