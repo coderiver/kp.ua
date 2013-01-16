@@ -14,6 +14,11 @@
       }
    }
 }
+*+ html {
+    .footer__news li, .about {
+      display: inline;
+    }
+}
 * html {
    .top-bar {
        position: absolute;
@@ -35,4 +40,10 @@
    .search {
       background: none;
    }
+    .footer__news li, .about {
+      display: inline;
+    }
+    .about {
+      margin-right: 20px;
+    }
 }
