@@ -3,7 +3,7 @@
 .lteie8 .search__text { line-height: 30px; }
 .lteie8 .search span { display: none; }
 
-* + html .footer__news li, * + html .about { display: inline; }
+* + html .footer__news li, * + html .about, * + html .captcha * { display: inline; }
 
 * html .top-bar { position: absolute; }
 * html .nav-spec a, * html .nav-spec li, * html .nav a, * html .nav li { display: inline; }
@@ -11,5 +11,6 @@
 * html .header__widgets { margin-bottom: 20px; }
 * html .nav { height: 27px; }
 * html .search { background: none; }
-* html .footer__news li, * html .about { display: inline; }
+* html .footer__news li, * html .about, * html .captcha *, * html .nav .active span, * html .nav .active { display: inline; }
 * html .about { margin-right: 20px; }
+* html .form { height: 100%; }

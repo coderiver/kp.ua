@@ -14,11 +14,15 @@
       }
    }
 }
+// ie7
 *+ html {
-    .footer__news li, .about {
+    .footer__news li, 
+    .about, .captcha * {
       display: inline;
     }
 }
+
+// ie6
 * html {
    .top-bar {
        position: absolute;
@@ -40,10 +44,16 @@
    .search {
       background: none;
    }
-    .footer__news li, .about {
+    .footer__news li, 
+    .about, .captcha *, 
+    .nav .active span, 
+    .nav .active {
       display: inline;
     }
     .about {
       margin-right: 20px;
+    }
+    .form {
+        height: 100%;
     }
 }
