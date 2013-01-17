@@ -539,6 +539,7 @@ a{
 .icon_tw {@include sized-sprite($icons, tw2); }
 .icon_vk {@include sized-sprite($icons, vk2); }
 .icon_arr2 {@include sized-sprite($icons, arr2); }
+.icon_reload {@include sized-sprite($icons, reload); }
 
 .pagin {
    font-size: 12px;
@@ -560,7 +561,7 @@ a{
 
 .form {
    overflow: hidden;
-   padding: 15px 18px 0px 20px;
+   padding: 15px 18px 10px 20px;
    border: 1px solid #dadada;
    background: #f5f5f5;
 }
@@ -579,7 +580,8 @@ a{
       font-size: 12px;
       padding-bottom: 4px;
       &:before {
-         content: "• ";
+         content: "•";
+         padding-right: 5px;
          color: #d50028;
          font-family: Tahoma, Arial, sans-serif;
       }
@@ -603,6 +605,19 @@ a{
       min-height: 60px;
    }
 }
+.input-submit {
+   width: 100%;
+   height: 38px;
+   color: #565d66;
+   font-size: 22px;
+   font-weight: bold;
+   border: 1px solid #c8cbcd;
+   @include border-radius(5px);
+   @include background-image(linear-gradient(top, #fff 30%, #dfdfdf 100%));
+   &:hover {
+      @include background-image(linear-gradient(top, #dfdfdf 0%, #fff 50%));
+   }
+}
 .form__note {
    padding-top: 10px;
    font-size: 12px;
@@ -618,24 +633,37 @@ a{
    border: 1px solid #e1e1e1;
    padding: 6px 5px;
    @include border-radius(5px);
+   * {
+       display: inline-block;
+       vertical-align: middle;
+   }
    .input-text {
-      display: inline-block;
+      margin-bottom: 0;
       width: 106px;
-      vertical-align: middle;
       input {
          width: 86px;
       }
    }
-   span {
-      display: inline-block;
-      width: 77px;
-      vertical-align: middle;
+}
+.captcha__note {
+    width: 77px;
+}
+.captcha__reload {
+   margin: 0 7px;
+   width: 43px;
+   height: 43px;
+   border: 1px solid #c8cbcd;
+   text-align: center;
+   cursor: pointer;
+   @include border-radius(3px);
+   @include background-image(linear-gradient(top, #fff 30%, #dfdfdf 100%));
+   &:hover {
+       @include background-image(linear-gradient(top, #dfdfdf 0%, #fff 50%));
    }
-   img {
-      vertical-align: middle;
+   .icon {
+       margin-top: 8px;
    }
 }
-
 // ---------------------------------- END  Blocks ---------------------------------------- //
 
 // ------------------------------------ Footer ------------------------------------------- //
