@@ -275,6 +275,11 @@
         color: #e50b00;
     }
 } 
+.archive-nav_mod {
+    .archive-nav__list {
+        margin-bottom: 0px;
+    }
+}
 .archive-nav__list {
     margin-bottom: 20px;
     overflow: hidden;
