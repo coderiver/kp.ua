@@ -32,17 +32,9 @@
 		width: 300px;
 		padding: 40px 0 10px;
 	}
-}
-//
-.l-cols2 {
-    overflow: hidden;
-}
-.l-cols2-left, .l-cols2-right {
-    width: 330px;
-}
-.l-cols2-left {
-    float: left;
-}
-.l-cols2-right {
-    float: right;
+} 
+.l-cols_media {
+    padding: 17px 20px 20px;
+    background: #565D66;
+    @include box-shadow(inset 3px 10px 15px rgba(0,0,0,0.3),inset -3px 0 5px rgba(255,255,255,0.3));
 }
