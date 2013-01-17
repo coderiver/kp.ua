@@ -41,7 +41,7 @@ input[type="submit"], button {
    cursor:pointer;
 }
 a{
-	color:#00919e;
+	color: #1a5ca7;
 	&:hover{
 		text-decoration:none;
 	}
@@ -542,6 +542,7 @@ a{
 .icon_reload {@include sized-sprite($icons, reload); }
 .icon_play {@include sized-sprite($icons, play); }
 .icon_play-big {@include sized-sprite($icons, play-big); }
+.icon_home {@include sized-sprite($icons, home); }
 
 
 .pagin {

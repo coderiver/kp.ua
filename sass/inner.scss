@@ -417,6 +417,11 @@
         &:first-child {
             border-top: 0;
         }
+        span {
+            display: block;
+            font-size: 14px;
+            color: #78838f;        
+        }
     }
     a {
         color: #40454c;
@@ -742,6 +747,9 @@
     padding: 10px 17px;
     background: #40454c;
 }
+.video_cont {
+    background: #f5f5f5;
+}
 .video__wrap {
     position: relative;
     margin-bottom: 12px;
@@ -804,4 +812,93 @@
             @include sized-sprite($icons, arr3); 
         }
     }
+}
+
+.content-img {
+    position: relative;
+    margin: 5px 0;
+    img {
+        display: block;
+    }
+    div {
+        position: absolute;
+        width: 655;
+        bottom: 0;
+        left: 0;
+        padding: 8px 10px 25px 10px;
+        line-height: 1.1em;
+        color: #fff;
+        font-size: 32px;
+        font-weight: bold;
+        background: rgba(0,0,0,0.6);
+        text-shadow: #030303 0px 1px 0px;
+        a {
+            position: relative;
+            top: -5px;
+            color: #fff;
+            font: normal 12px Tahoma, Arial, sans-serif;
+            text-decoration: none;
+            background: #78838f;
+            padding: 3px 9px 4px 9px;
+            @include border-radius(3px);
+        }
+    }
+}
+.meta {
+    margin-bottom: 5px;
+    padding: 15px 0 5px;
+    font-size: 12px;
+    color: #565d66;
+    border-bottom: 1px solid #989898;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.meta__author {
+    color: #565d66;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 5px;
+}
+.meta__date {
+    color: #565d66;
+    text-decoration: underline;
+}
+.breadcrumbs {
+    margin-bottom: 5px;
+    a {
+        color: #565d66;
+        text-decoration: none;
+    }
+    span {
+        padding: 0 1px;
+    }
+    .active {
+        font-weight: bold;
+        color: #000;
+    }
+}
+.content-info {
+    margin: 0px 0px 2px -10px;
+    padding: 5px 0px 11px 20px;
+    font-size: 16px;
+    background: #f5f5f5;
+}
+.to-home {
+    margin: 25px 0 15px;
+    text-align: right;
+    .icon {
+        margin-right: 4px;
+    }
+    a {
+        font-size: 16px;
+        color: #565d66;
+    }
+}
+.sidebar-title {
+    padding-bottom: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #576069;
+    font-family: Tahoma, Arial,sans-serif;
+    @include background-image(linear-gradient(top, #fff 75%, #ebebeb 100%));
 }
