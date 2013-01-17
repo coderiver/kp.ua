@@ -10,6 +10,7 @@
 
 .topic{
 	@extend %clr;
+	margin-bottom: 30px;
    .topic__left{
       width: 420px;
       float: left;
@@ -31,6 +32,8 @@
 .other{
    background: #f5f5f5;
    padding: 8px;
+   position: relative;
+   padding-bottom: 40px;
    a{
       color: #1A5CA7;
    }
@@ -53,6 +56,40 @@
             text-decoration: none;
          }
       }
-
+   }
+   .other__scrollup,.other__scrolldown{
+      height: 28px;
+      cursor: pointer;
+      line-height: 28px;
+      border-radius: 4px;
+      text-align: center;
+      font-weight: bold;
+      color: #565d73;
+      text-decoration: none;
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      border: 1px solid #c8cbcd;
+      width: 32px;
+      @include background-image(linear-gradient(top, #ffffff 0, #e1e1e1 100%));
+      &:hover{
+         @include background-image(linear-gradient(top, #fff 0, #ccc 100%));
+      }
+      &:active{
+         @include background-image(linear-gradient(top, #e1e1e1 0, #ffffff 100%));
+      }
+   }
+   .other__scrollup{
+      i{
+         display: inline-block;
+         @include sized-sprite($icons, arrup);
+         position: relative;
+         top: 4px;
+      }
+   }
+   .other__scrolldown{
+      right: 8px;
+      left: auto;
+      width: 190px;
    }
 }
