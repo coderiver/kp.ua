@@ -540,6 +540,8 @@ a{
 .icon_vk {@include sized-sprite($icons, vk2); }
 .icon_arr2 {@include sized-sprite($icons, arr2); }
 .icon_reload {@include sized-sprite($icons, reload); }
+.icon_play {@include sized-sprite($icons, play); }
+.icon_play-big {@include sized-sprite($icons, play-big); }
 
 .pagin {
    font-size: 12px;
