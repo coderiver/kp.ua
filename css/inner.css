@@ -204,3 +204,22 @@
 .video-preview { display: block; position: relative; }
 .video-preview .icon_play { position: absolute; bottom: 2px; left: 5px; }
 .video-preview img { display: block; }
+
+.video { margin-bottom: 5px; padding: 10px 17px; background: #40454c; }
+
+.video__wrap { position: relative; margin-bottom: 12px; -webkit-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3); -moz-box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3); box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3); }
+.video__wrap img { display: block; }
+
+.video__descr { position: absolute; bottom: 0; left: 0; width: 100%; height: 62px; background: rgba(64, 69, 76, 0.8); }
+.video__descr a { text-decoration: none; }
+.video__descr .icon { margin: 3px 10px 0 7px; }
+.video__descr span { vertical-align: top; display: inline-block; padding-top: 10px; color: #fff; font-size: 14px; }
+
+.get-video-code { float: right; }
+
+.video__like { clear: both; margin-bottom: 30px; }
+.video__like span { display: block; margin-bottom: 4px; }
+
+.com-counter { font-size: 21px; font-weight: bold; color: #fff; text-transform: uppercase; }
+.com-counter span { position: relative; padding: 1px 4px; color: #fff; font-size: 16px; font-weight: bold; background: #ff0402; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
+.com-counter span:before { content: ""; position: absolute; left: 4px; bottom: -5px; background: url('../img/icons-sc4b3abe2a8.png') 0 -782px no-repeat; width: 5px; height: 5px; }
