@@ -566,7 +566,36 @@ a:hover { text-decoration: none; }
 .to-home .icon { margin-right: 4px; }
 .to-home a { font-size: 16px; color: #565d66; }
 
-.sidebar-title { padding-bottom: 5px; font-size: 17px; font-weight: bold; text-transform: uppercase; color: #576069; font-family: Tahoma, Arial,sans-serif; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmViZWIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(75%, #ffffff), color-stop(100%, #ebebeb)); background-image: -webkit-linear-gradient(top, #ffffff 75%, #ebebeb 100%); background-image: -moz-linear-gradient(top, #ffffff 75%, #ebebeb 100%); background-image: -o-linear-gradient(top, #ffffff 75%, #ebebeb 100%); background-image: -ms-linear-gradient(top, #ffffff 75%, #ebebeb 100%); background-image: linear-gradient(top, #ffffff 75%, #ebebeb 100%); }
+.sidebar-title { margin-bottom: 45px; padding-bottom: 5px; font-size: 17px; font-weight: bold; text-transform: uppercase; color: #576069; font-family: Tahoma, Arial,sans-serif; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI3NSUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYmViZWIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(75%, #ffffff), color-stop(100%, #ebebeb)); background-image: -webkit-linear-gradient(top, #ffffff 75%, #ebebeb 100%); background-image: -moz-linear-gradient(top, #ffffff 75%, #ebebeb 100%); background-image: -o-linear-gradient(top, #ffffff 75%, #ebebeb 100%); background-image: -ms-linear-gradient(top, #ffffff 75%, #ebebeb 100%); background-image: linear-gradient(top, #ffffff 75%, #ebebeb 100%); }
+
+.bloger { margin-bottom: 60px; color: #fff; }
+.bloger a { text-decoration: none; }
+
+.bloger__name { position: relative; margin-left: 50px; padding: 4px 0 5px 50px; line-height: 1.1em; font-size: 14px; background: #565D66; }
+.bloger__name a { color: #fff; }
+.bloger__name strong { display: block; font-size: 16px; text-transform: uppercase; }
+.bloger__name img { position: absolute; left: -50px; bottom: 0; }
+
+.bloger__spec { display: block; padding: 2px 10px 3px 10px; font-size: 11px; background: #78838f; }
+
+.bloger__title { padding: 7px 0px 5px 3px; }
+.bloger__title a { font-size: 16px; line-height: 1.1em; color: #1a5ca7; }
+
+.bloger__text { padding: 7px 12px 12px; background: #f5f5f5; }
+.bloger__text a { color: #565d66; font-size: 12px; }
+.bloger__text span { color: #f00; font-weight: bold; }
+
+.related { overflow: hidden; margin: 15px 0 0 -10px; font-size: 12px; border-top: 1px solid #989898; -webkit-box-shadow: 0 8px 15px -10px #989898; -moz-box-shadow: 0 8px 15px -10px #989898; box-shadow: 0 8px 15px -10px #989898; }
+
+.related__title { float: left; padding: 10px; width: 160px; }
+.related__title strong { color: #e40000; font-size: 16px; font-weight: bold; }
+.related__title a { color: #40454c; font-weight: bold; text-decoration: none; }
+
+.related__main { overflow: hidden; float: right; width: 483px; padding: 10px; background: #f5f5f5; }
+.related__main ul { float: left; margin-right: 10px; width: 150px; }
+.related__main li { margin-bottom: 11px; }
+.related__main a { color: #000; text-decoration: none; }
+.related__main span { color: #78838f; }
 
 .lteie8 .nav { background: #727e8a; }
 .lteie8 .footer { background: #626a74; }

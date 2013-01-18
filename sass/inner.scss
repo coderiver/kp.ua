@@ -894,6 +894,7 @@
     }
 }
 .sidebar-title {
+    margin-bottom: 45px;
     padding-bottom: 5px;
     font-size: 17px;
     font-weight: bold;
@@ -901,4 +902,104 @@
     color: #576069;
     font-family: Tahoma, Arial,sans-serif;
     @include background-image(linear-gradient(top, #fff 75%, #ebebeb 100%));
+}
+.bloger {
+    margin-bottom: 60px;
+    color: #fff;
+    a {
+        text-decoration: none;
+    }
+}
+.bloger__name {
+    position: relative;
+    margin-left: 50px;
+    padding: 4px 0 5px 50px;
+    line-height: 1.1em;
+    font-size: 14px;
+    background: #565D66;
+    a {
+        color: #fff;
+    }
+    strong {
+        display: block;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    img {
+        position: absolute;
+        left: -50px;
+        bottom: 0;
+    }
+}
+.bloger__spec {
+    display: block;
+    padding: 2px 10px 3px 10px;
+    font-size: 11px;
+    background: #78838f;
+}
+.bloger__title {
+    padding: 7px 0px 5px 3px;
+    a {
+        font-size: 16px;
+        line-height: 1.1em;
+        color: #1a5ca7;
+    }
+}
+.bloger__text {
+    padding: 7px 12px 12px;
+    background: #f5f5f5;
+    a {
+        color: #565d66;
+        font-size: 12px;
+    }
+    span {
+        color: #f00;
+        font-weight: bold;
+    }
+}
+
+.related {
+    overflow: hidden;
+    margin: 15px 0 0  -10px;
+    font-size: 12px;
+    border-top: 1px solid #989898;
+    @include box-shadow(0 8px 15px -10px #989898);
+}
+.related__title {
+    float: left;
+    padding: 10px;
+    width: 160px;
+    strong {
+        color: #e40000;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    a {
+        color: #40454c;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+.related__main {
+    overflow: hidden;
+    float: right;
+    width: 483px;
+    padding: 10px;
+    background: #f5f5f5;
+    ul {
+        float: left;
+        margin-right: 10px;
+        width: 150px;
+    }
+    li {
+        margin-bottom: 11px;
+    }
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    span {
+        color: #78838f;
+    }
+
 }
