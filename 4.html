@@ -1,0 +1,594 @@
+<!doctype html>
+<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+    <!--[if lt IE 9]> 
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="js/common.js"></script> 
+    </head>
+<body>
+<div class="l-wrapper">
+    <div class="top-banner"></div>
+    <div class="l-container">
+        <header class="header">
+            <!-- top bar -->
+            <div class="top-bar">
+                <a href="#" class="top-bar__city">Москва</a>
+                <a href="#" class="top-bar__region">
+                    <i></i>
+                    <span>Не ваш регион? Просим сообщить нам</span>
+                </a>
+                <div class="top-bar__enter">
+                    <a href="#" class="btn btn_gray">Войти</a>
+                    <a href="#" class="btn btn_gray">Зарегистрироваться</a>
+                </div>
+            </div>
+            <!-- END top bar -->
+            <!-- banner -->
+            <div class="header__banner">
+                <img src="http://placesheen.com/728/90" alt="">
+            </div>
+            <!-- END banner -->
+            <!-- widgets -->
+            <div class="header__widgets">
+                <a href="#" class="header__logo"></a>
+                <div class="today">
+                    Сегодня 
+                    <strong>14 Января</strong>
+                </div>
+                <div class="weather weather_sun-cloud">
+                    Погода<strong>-7°C</strong>    
+                </div>
+                <div class="search">
+                    <input class="search__text" type="text">
+                    <div class="search__submit">
+                        <i></i>
+                        <span>Найти</span>
+                        <input type="submit" value="Найти">
+                    </div>
+                </div>
+            </div>
+            <!-- END widgets -->
+            <!-- links -->
+            <div class="header__links">
+                <div class="header__mob-links">
+                    <span>Для мобильных устройств:</span>
+                    <a href="#">RSS</a>
+                    <a href="#">WAP</a>
+                    <a href="#">PDA</a>
+                    <a href="#">IPAD</a>
+                    <a href="#" class="mobile">MOBILE</a>
+                </div>
+                <a href="#" class="weather-webcam">
+                    <i></i>Погода за окном
+                </a>
+                <div class="header__soc">
+                    <span>КП в социальных сетях:</span>
+                    <a href="#" class="soc soc_ig"></a>
+                    <a href="#" class="soc soc_gp"></a>
+                    <a href="#" class="soc soc_fb"></a>
+                    <a href="#" class="soc soc_odn"></a>
+                    <a href="#" class="soc soc_tw"></a>
+                    <a href="#" class="soc soc_vk"></a>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <!-- links -->
+            <div class="header__nav-wrap"> 
+                <nav class="nav-top">
+                    <ul>
+                        <li class="nav-top__photo"><a href="#"><i class="icon icon_photo"></i>Фото</a></li>
+                        <li class="nav-top__video"><a href="#"><i class="icon icon_video"></i>Видео</a></li>
+                        <li><a href="#">ВСЕ О КП</a></li>
+                        <li><a href="#">ВАКАНСИИ</a></li>
+                        <li><a href="#">ОБЪЯВЛЕНИЯ</a></li>
+                        <li><a href="#">ЕЖЕНЕДЕЛЬНИК</a></li>
+                        <li><a href="#">ТЕЛЕКАНАЛ КП</a></li>
+                        <li><a href="#">РАДИО КП</a></li>
+                        <li><a href="#">РЕКЛАМА</a></li>
+                        <li><a href="#">КОЛЛЕКЦИИ</a></li>
+                        <li><a href="#">КППРЕСС-ЦЕНТР</a></li>
+                        <li><a href="#">АКЦИИ КП</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-spec">
+                    <ul>
+                        <li><a href="#" class="nav-spec__red">Убийство Ирины Кабановой</a></li>
+                        <li><a href="#" class="nav-spec__blue">Зима в городе</a></li>
+                        <li><a href="#" class="nav-spec__green">Новогодний марафон</a></li>
+                        <li><a href="#" class="nav-spec__black">Колумнисты</a></li>
+                        <li><a href="#" class="nav-spec__purple">Москва</a></li>
+                        <li><a href="#" class="nav-spec__azure">Купи билетик!</a></li>
+                        <li><a href="#" class="nav-spec__yellow">Афиша</a></li>
+                        <li><a href="#" class="nav-spec__yellow">Телевизор</a></li>
+                        <li><a href="#" class="nav-spec__red">Скидки</a></li>
+                        <li><a href="#" class="nav-spec__blue">Дальний Восток</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#"><span>Новости</span></a></li>
+                        <li><a class="active" href="#"><span>Политика</span></a></li>
+                        <li><a href="#"><span>Экономика</span></a></li>
+                        <li><a href="#"><span>Общество</span></a></li>
+                        <li><a href="#"><span>Происшествия</span></a></li>
+                        <li><a href="#"><span>Звезды</span></a></li>
+                        <li><a href="#"><span>Наука</span></a></li>
+                        <li><a href="#"><span>Спорт</span></a></li>
+                        <li><a href="#"><span>Авто</span></a></li>
+                        <li><a href="#"><span>Дом. Семья</span></a></li>
+                        <li><a href="#"><span>Здоровье</span></a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+        <div class="l-cols">
+            <h1 class="title-l-1">
+                <a href="#">Политика</a>
+                <span>Митинги и шествия</span>
+            </h1>
+            <div class="l-col-left">
+                <div class="topic">
+                    <!-- BEGIN  topic__left-->
+                    <div class="topic__left">
+                        <div>
+                            <article class="article article_mod">
+                                <a href="#">
+                                    <img src="http://placesheen.com/180/120" alt="">
+                                    <h5>Анатолий Сердюков станет фигурантом уголовного дела о ВИП-даче</h5>
+                                </a>
+                                <p><span>10:50</span> Выяснилось, что одним из главных объектов Минобороны стала элитная база отдыха</p>
+                            </article>
+                            <article class="article article_mod">
+                                <a href="#">
+                                    <img src="http://placesheen.com/180/120" alt="">
+                                    <h5>Анатолий Сердюков станет фигурантом уголовного дела о ВИП-даче</h5>
+                                </a>
+                                <p><span>10:50</span> Выяснилось, что одним из главных объектов Минобороны стала элитная база отдыха <strong>[репортаж, фото и видео]</strong></p>
+                            </article>
+                            <article class="article article_mod">
+                                <a href="#">
+                                    <img src="http://placesheen.com/180/120" alt="">
+                                    <h5>Анатолий Сердюков станет фигурантом уголовного дела о ВИП-даче</h5>
+                                </a>
+                                <p><span>10:50</span> Выяснилось, что одним из главных объектов Минобороны стала элитная база отдыха <strong>[репортаж, фото и видео]</strong></p>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- END topic__left-->
+                    <!-- BEGIN  topic__right-->
+                    <div class="topic__right">
+                        <div class="other">
+                            <h2>Остальные материалы</h2>
+                            <dl class="other__content">
+                                <dt>7 Января, 14:41</dt>
+                                <dd><a href="#">За 30 тысяч долларов можно покрыть свой компьютер и другие гаджеты золотом</a></dd>
+                                <dt>30 Декабря 2012, 21:00</dt>
+                                <dd><a href="#">Когда будут подведены итоги Большой Новогодней Викторины?</a></dd>
+                                <dt>27 Декабря 2012, 15:54</dt>
+                                <dd><a href="#">На kp.ru появился раздел «Погода за окном»</a></dd>
+                                <dt>26 Декабря 2012, 14:20</dt>
+                                <dd><a href="#">Россияне проводят в соцсетях больше девяти часов в неделю</a></dd>
+                                <dt>24 Декабря 2012, 19:41</dt>
+                                <dd><a href="#">Обзор смартфона Prestigio Multiphone PAP 4040Duo</a></dd>
+                                <dt>7 Января, 14:41</dt>
+                                <dd><a href="#">За 30 тысяч долларов можно покрыть свой компьютер и другие гаджеты золотом</a></dd>
+                                <dt>30 Декабря 2012, 21:00</dt>
+                                <dd><a href="#">Когда будут подведены итоги Большой Новогодней Викторины?</a></dd>
+                                <dt>27 Декабря 2012, 15:54</dt>
+                                <dd><a href="#">На kp.ru появился раздел «Погода за окном»</a></dd>
+                                <dt>26 Декабря 2012, 14:20</dt>
+                                <dd><a href="#">Россияне проводят в соцсетях больше девяти часов в неделю</a></dd>
+                                <dt>24 Декабря 2012, 19:41</dt>
+                                <dd><a href="#">Обзор смартфона Prestigio Multiphone PAP 4040Duo</a></dd>
+                                <dt>24 Декабря 2012, 19:41</dt>
+                                <dd><a href="#">Обзор смартфона Prestigio Multiphone PAP 4040Duo</a></dd>
+                                <dt>24 Декабря 2012, 19:41</dt>
+                                <dd><a href="#">Обзор смартфона Prestigio Multiphone PAP 4040Duo</a></dd>
+                            </dl>
+                            <div class="other__scrollup"><i></i></div>
+                            <div class="other__scrolldown">Показать еще</div>
+                        </div>
+                    </div>
+                    <!-- END topic__right-->
+                </div>
+                <div class="video-scroller">
+                    <span class="video-scroller__label">Видео</span>
+                    <div class="video">
+                        <a href="#" class="video-scroller__title">Митинги и шествия</a>
+                        <div class="video__wrap">
+                            <img src="http://placesheen.com/420/315" alt="">
+                            <div class="video__descr">
+                                <a href="#">
+                                    <i class="icon icon_play-big"></i>
+                                    <span>Горки Ленинские. Неизвестное об Ильиче и его семье</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other video-bar">
+                        <h6 class="video-bar__title">Другие видеоролики</h6>
+                        <ul>
+                            <li>
+                                <a href="#" class="video-bar__preview">
+                                    <img src="http://placesheen.com/62/47" alt="">
+                                </a>
+                                <a href="#">Силовики Саакашвили вербовали геев</a>
+                            </li>
+                            <li>
+                                <a href="#" class="video-bar__preview">
+                                    <img src="http://placesheen.com/62/47" alt="">
+                                </a>
+                                <a href="#">Силовики Саакашвили вербовали геев</a>
+                            </li>
+                            <li>
+                                <a href="#" class="video-bar__preview">
+                                    <img src="http://placesheen.com/62/47" alt="">
+                                </a>
+                                <a href="#">Силовики Саакашвили вербовали геев</a>
+                            </li>
+                            <li>
+                                <a href="#" class="video-bar__preview">
+                                    <img src="http://placesheen.com/62/47" alt="">
+                                </a>
+                                <a href="#">Силовики Саакашвили вербовали геев</a>
+                            </li>
+                        </ul>
+                        <div class="other__scrollup"><i></i></div>
+                        <div class="other__scrolldown">Показать еще видео</div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div>
+                    <article class="article article_width">
+                        <a href="#">
+                            <img src="http://placesheen.com/180/120" alt="">
+                            <h5>Анатолий Сердюков станет фигурантом уголовного дела о ВИП-даче</h5>
+                            <p><span>10:50</span> Выяснилось, что одним из главных объектов Минобороны стала элитная база отдыха <strong>[репортаж, фото и видео]</strong></p>
+                        </a>
+                    </article>
+                    <article class="article article_width">
+                        <a href="#">
+                            <img src="http://placesheen.com/180/120" alt="">
+                            <h5>Анатолий Сердюков станет фигурантом уголовного дела о ВИП-даче</h5>
+                            <p><span>10:50</span> Выяснилось, что одним из главных объектов Минобороны стала элитная база отдыха <strong>[репортаж, фото и видео]</strong></p>
+                        </a>
+                    </article>
+                    <article class="article article_width">
+                        <a href="#">
+                            <img src="http://placesheen.com/180/120" alt="">
+                            <h5>Анатолий Сердюков станет фигурантом уголовного дела о ВИП-даче</h5>
+                            <p><span>10:50</span> Выяснилось, что одним из главных объектов Минобороны стала элитная база отдыха <strong>[репортаж, фото и видео]</strong></p>
+                        </a>
+                    </article>
+                    <article class="article article_width">
+                        <a href="#">
+                            <img src="http://placesheen.com/180/120" alt="">
+                            <h5>Анатолий Сердюков станет фигурантом уголовного дела о ВИП-даче</h5>
+                            <p><span>10:50</span> Выяснилось, что одним из главных объектов Минобороны стала элитная база отдыха <strong>[репортаж, фото и видео]</strong></p>
+                        </a>
+                    </article>
+                    <article class="article article_width">
+                        <a href="#">
+                            <img src="http://placesheen.com/180/120" alt="">
+                            <h5>Анатолий Сердюков станет фигурантом уголовного дела о ВИП-даче</h5>
+                            <p><span>10:50</span> Выяснилось, что одним из главных объектов Минобороны стала элитная база отдыха <strong>[репортаж, фото и видео]</strong></p>
+                        </a>
+                    </article>
+                    <article class="article article_width">
+                        <a href="#">
+                            <img src="http://placesheen.com/180/120" alt="">
+                            <h5>Анатолий Сердюков станет фигурантом уголовного дела о ВИП-даче</h5>
+                            <p><span>10:50</span> Выяснилось, что одним из главных объектов Минобороны стала элитная база отдыха <strong>[репортаж, фото и видео]</strong></p>
+                        </a>
+                    </article>
+                </div>
+                <div class="pagin">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <span>...</span>
+                    <a href="#">186</a>
+                </div>
+            </div>
+            <aside class="sidebar">
+                <ul class="soc-tabs">
+                    <li data-tab=".js-tab-soc-1" class="active"><i class="icon icon_odn"></i></li>
+                    <li data-tab=".js-tab-soc-2"><i class="icon icon_fb"></i></li>
+                    <li data-tab=".js-tab-soc-3"><i class="icon icon_tw"></i></li>
+                    <li data-tab=".js-tab-soc-4"><i class="icon icon_vk"></i></li>
+                </ul>
+                <div class="tab-soc-cont js-tab-soc-1"><img src="img/soc-block.png" alt=""></div>
+                <div class="tab-soc-cont js-tab-soc-2"><img src="img/soc-block.png" alt="">2</div>
+                <div class="tab-soc-cont js-tab-soc-3"><img src="img/soc-block.png" alt="">3</div>
+                <div class="tab-soc-cont js-tab-soc-4"><img src="img/soc-block.png" alt="">4</div>
+                <div class="info-block">
+                    <strong>ИТОГИ ГОДА</strong>
+                    <ul>
+                        <li>    
+                            <a href="#">
+                                <img src="http://placesheen.com/100/67" alt="">
+                                <h3>Рисуем кардиограмму страны!</h3>
+                            </a>
+                            <p>Проголосуй за самые важные события минувшего года</p>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="fb-reg"></a>
+                <div class="sidebar-title">Колумнисты</div>
+                <div class="bloger">
+                    <div class="bloger__name">
+                        <a href="#"><img src="img/bloger.png" alt=""></a>
+                        <a href="#">
+                            Ярослава
+                            <strong>ТАНЬКОВА</strong>
+                        </a>
+                    </div>
+                    <span class="bloger__spec">специальный корреспондент</span>
+                    <h3 class="bloger__title">
+                        <a href="#">Людей в России принято спасать по остаточному принципу…</a>
+                    </h3>
+                    <div class="bloger__text">
+                        <a href="#">Личное мнение о шумихе вокруг дерзкого убийства криминального авторитета и ее причинах <span>[Заметки нестороннего]</span></a>
+                    </div>
+                </div>
+                <div class="bloger">
+                    <div class="bloger__name">
+                        <a href="#"><img src="img/bloger.png" alt=""></a>
+                        <a href="#">
+                            Ярослава
+                            <strong>ТАНЬКОВА</strong>
+                        </a>
+                    </div>
+                    <span class="bloger__spec">специальный корреспондент</span>
+                    <h3 class="bloger__title">
+                        <a href="#">Людей в России принято спасать по остаточному принципу…</a>
+                    </h3>
+                    <div class="bloger__text">
+                        <a href="#">Личное мнение о шумихе вокруг дерзкого убийства криминального авторитета и ее причинах <span>[Заметки нестороннего]</span></a>
+                    </div>
+                </div>
+                <div class="info-block info-block_spec">
+                    <strong>БЛОГИ ЖУРНАЛИСТОВ</strong>
+                    <ul>
+                        <li>    
+                            <a href="#">
+                                <img src="http://placesheen.com/100/67" alt="">
+                                <h5>Остатки 2012 года сладки!</h5>
+                            </a>
+                            <p>Проголосуй за самые важные события минувшего года</p>
+                        </li>
+                        <li>    
+                            <a href="#">
+                                <img src="http://placesheen.com/100/67" alt="">
+                                <h5>Остатки 2012 года сладки!</h5>
+                            </a>
+                            <p>Проголосуй за самые важные события минувшего года</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="yandex-direct">
+                    <img src="img/yandex-direct.png" alt="">
+                </div>
+                <div class="bank-widget">
+                    <img src="img/bank-widget.png" alt="">
+                </div>
+                <div class="bookswidget">
+                    <img src="img/books-widget.png" alt="">
+                </div>
+                <div class="news-sidebar">
+                    <h5>НОВОСТИ МИРА</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="http://placesheen.com/100/100" alt="">
+                                <p>Это растение снимает все симптомы варикоза</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://placesheen.com/100/100" alt="">
+                                <p>Это растение снимает все симптомы варикоза</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://placesheen.com/100/100" alt="">
+                                <p>Это растение снимает все симптомы варикоза</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <div class="push"></div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer__widgets">
+        <a href="#" class="footer__logo"></a>
+        <div class="footer__newspaper">
+            <a href="#">Архив номеров</a>
+            <span>|</span>
+            <a href="#">Подписка</a>
+        </div>
+        <div class="calendar"></div>
+        <div class="footer__soc">
+            <span>Комсомолка в социальных сетях:</span>
+            <a href="#" class="soc soc_ig"></a>
+            <a href="#" class="soc soc_gp"></a>
+            <a href="#" class="soc soc_fb"></a>
+            <a href="#" class="soc soc_odn"></a>
+            <a href="#" class="soc soc_tw"></a>
+            <a href="#" class="soc soc_vk"></a>
+        </div>
+        <div class="footer__location">
+            Как с нами связаться:            
+            <p><a href="/daily/scheme/">Схема проезда</a></p>
+            <p><a href="mailto:kp@kp.ua">Читателям</a></p>
+        </div>
+        <div class="footer__age">
+           возрастная категория сайта 
+           <span>12+</span>
+        </div>
+    </div>
+    <div class="footer__main">
+        <nav class="footer__top-nav">
+            <ul>
+                <li><a href="#">Все о КП</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Объявления</a></li>
+                <li><a href="#">Еженедельник</a></li>
+                <li><a href="#">Телеканал КП</a></li>
+                <li><a href="#">Радио КП</a></li>
+                <li><a href="#">Реклама</a></li>
+                <li><a href="#">Коллекции КП</a></li>
+                <li><a href="#">Пресс-центр</a></li>
+                <li><a href="#">Акции КП</a></li>
+            </ul>
+        </nav>
+        <nav class="footer__nav">
+            <ul>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Политика</a></li>
+                <li><a href="#">Экономика</a></li>
+                <li><a href="#">Общество</a></li>
+                <li><a href="#">Происшествия</a></li>
+                <li><a href="#">Звезды</a></li>
+                <li><a href="#">Наука</a></li>
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#">Авто</a></li>
+                <li><a href="#">Дом. Семья</a></li>
+            </ul>
+        </nav>
+        <div class="footer__info">
+            <div>
+                <p>УЧРЕДИТЕЛЬ И РЕДАКЦИЯ: ЗАО <strong>«ИД «Комсомольская правда».</strong></p>
+                Сетевое издание (сайт) зарегистрировано Роскомнадзором, свидетельство Эл№ФC77-50166 от 15 июня 2012.</p>
+                <p>Главный редактор - Сунгоркин В.Н.</p>
+                <p>Шеф-редактор сайта - Носова О.В.</p>
+                <p>Сообщения и комментарии читателей сайта размещаются без предварительного редактирования. Редакция оставляет за собой право удалить их с сайта или отредактировать, если указанные сообщения и комментарии являются злоупотреблением свободой массовой информации или нарушением иных требований закона.</p>
+            </div>
+            <div>
+                <p><strong>© ЗАО ИД «Комсомольская правда», 2013.</strong></p>
+                 <p>125993, Москва, Старый Петровско-Разумовский проезд, 1/23, стр. 1. Тел. +7 (495) 777-02-82. <br>
+                Исключительные права на материалы, размещённые на интернет-сайте <a href="#">kp.ru</a>, в соответствии с законодательством Российской Федерации об охране результатов интеллектуальной деятельности принадлежат ЗАО "Издательский дом "Комсомольская правда", и не подлежат использованию другими лицами в какой бы то ни было форме без письменного разрешения правообладателя.<br>
+                Приобретение авторских прав: <a href="mailto:kp@kp.ru">kp@kp.ru</a><br>
+                Для читателей. Нам важно ваше мнение: (495)777-02-82, 8-800-200-0057 (бесплатно для жителей РФ).</p>
+            </div>
+        </div>
+        <div class="footer__advert">
+            <strong>Реклама на сайте www.kp.ru</strong>
+            <a href="#">СМС рассылка</a> через интернет
+        </div>
+        <div class="footer__news">
+            <ul>
+                <li><a href="#">Новости мира</a></li>
+                <li><a href="#">Новости мира</a></li>
+                <li><a href="#">Новости мира</a></li>
+                <li><a href="#">Новости мира</a></li>
+                <li><a href="#">Новости мира</a></li>
+                <li><a href="#">Новости мира</a></li>
+                <li><a href="#">Новости мира</a></li>
+                <li><a href="#">Новости мира</a></li>
+                <li><a href="#">Новости мира</a></li>
+            </ul>
+            <ul>
+                <li>Новости в регионах:</li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+                <li><a href="#">Москва</a></li>
+            </ul>
+             <ul>
+                <li>Новости за рубежом:</li>
+                <li><a href="#">Чехия</a></li>
+                <li><a href="#">Чехия</a></li>
+                <li><a href="#">Чехия</a></li>
+                <li><a href="#">Чехия</a></li>
+                <li><a href="#">Чехия</a></li>
+                <li><a href="#">Чехия</a></li>
+                <li><a href="#">Чехия</a></li>
+                <li><a href="#">Чехия</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__counters">
+        <img src="img/counters.png" alt="">
+    </div>
+</footer>
+</body>
+</html>

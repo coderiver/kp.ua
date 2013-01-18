@@ -1,7 +1,7 @@
 1. http://www.kp.ru/
 2. http://www.kp.ru/online/                     OK
 3. http://www.kp.ru/politics                    OK
-4. http://www.kp.ru/daily/elections2012/
+4. http://www.kp.ru/daily/elections2012/*       OK
 5. http://www.kp.ru/daily/26001.4/2928090/      OK
 6. http://www.kp.ru/daily/press/                OK
 7. http://www.kp.ru/daily/press/detail/10596/   OK

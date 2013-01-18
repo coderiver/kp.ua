@@ -110,13 +110,23 @@
 .article a:hover { text-decoration: underline; }
 .article h5 { font-size: 18px; line-height: 1.2em; margin-bottom: 20px; }
 .article p { margin-bottom: 8px; }
+.article p strong { color: #f00; }
 
 .article_mod { font-size: 14px; }
+.article_mod a:hover { text-decoration: none; }
 .article_mod span { padding-right: 2px; color: #989898; font-size: 12px; }
+.article_mod:last-child { border: 0; }
+.article_mod p { color: #000; font-size: 14px; text-decoration: none; }
 
 .article_small { padding: 7px 0px 10px 0px; border-top: 1px solid #d6d6d6; }
 .article_small h5 { font-size: 14px; }
 .article_small:first-child { border: none; }
+
+.article_width { padding-top: 10px; font-size: 14px; border-top: 1px solid #c9cdd2; }
+.article_width a:hover { text-decoration: none; }
+.article_width span { padding-right: 2px; color: #989898; font-size: 12px; }
+.article_width:first-child { border: 0; }
+.article_width p { color: #000; font-size: 14px; text-decoration: none; }
 
 .article-categ { padding-bottom: 4px; font-size: 21px; font: normal 21px Tahoma, Arial, sans-serif; border-bottom: 1px solid #78838f; }
 .article-categ a { color: #40454c; text-decoration: none; }
