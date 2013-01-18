@@ -20,4 +20,23 @@ $(document).ready(function() {
    $(".archive-nav__region").click(function(){
       $(this).next().slideDown();
    });
+   $(".scroll li:first").addClass("active");
+   var img_text = $(".scroll li:first div").html();
+   var img_link = $(".scroll li:first a").attr("href");
+   $(".photo-day__text").html(img_text);
+   $(".photo-day__current img").attr("src", img_link);
+   $(".scroll li a").click(function(){
+      $(".scroll li").removeClass("active");
+      $(this).parent().addClass("active");
+      img_link = $(this).attr("href");
+      img_text = $(this).next().html();
+      $(".photo-day__current img").attr("src", img_link);
+      $(".photo-day__text").html(img_text);
+      return false;
+   });
+   // scrollable 
+   $(".scroll").scrollable({
+         next:'.scroll__next',
+         prev:'.scroll__prev'
+   });
 });

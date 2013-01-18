@@ -555,6 +555,8 @@ a{
 .icon_play {@include sized-sprite($icons, play); }
 .icon_play-big {@include sized-sprite($icons, play-big); }
 .icon_home {@include sized-sprite($icons, home); }
+.icon_next {@include sized-sprite($icons, next); }
+.icon_prev {@include sized-sprite($icons, prev); }
 
 
 .pagin {
@@ -688,6 +690,8 @@ a{
        margin-top: 8px;
    }
 }
+
+
 // ---------------------------------- END  Blocks ---------------------------------------- //
 
 // ------------------------------------ Footer ------------------------------------------- //
