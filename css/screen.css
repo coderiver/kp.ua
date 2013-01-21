@@ -348,14 +348,18 @@ a:hover { text-decoration: none; }
 .photo-day__text { margin-bottom: 6px; padding: 10px 6px 12px 14px; font-size: 14px; background: #1d1f22; color: #fff; }
 .photo-day__text strong { color: #ffb421; }
 
-.scroll { position: relative; overflow: hidden; height: 100px; }
+.scroll-main { position: relative; height: 100px; }
+
+.scroll { position: relative; overflow: hidden; margin: 0 auto; height: 100px; width: 610px; }
 
 .scroll__wrap { position: absolute; padding: 10px 0 0 22px; width: 2000em; overflow: hidden; }
-.scroll__wrap li { position: relative; float: left; padding: 5px 10px 13px; border: 1px solid transparent; }
-.scroll__wrap .active { border: 1px solid #78838f; background: #565d66; }
-.scroll__wrap .active:before { content: ""; position: absolute; left: 50%; top: -8px; margin-left: -4px; background: url('../img/icons-s137c057bdb.png') 0 -857px no-repeat; width: 13px; height: 8px; }
-.scroll__wrap img { display: block; -webkit-box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.6); -moz-box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.6); box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.6); }
-.scroll__wrap div { display: none; }
+
+.scroll__items { float: left; }
+.scroll__items div { width: 100px; position: relative; float: left; padding: 5px 10px 13px; border: 1px solid transparent; }
+.scroll__items .active { border: 1px solid #78838f; background: #565d66; }
+.scroll__items .active:before { content: ""; position: absolute; left: 50%; top: -8px; margin-left: -4px; background: url('../img/icons-s137c057bdb.png') 0 -857px no-repeat; width: 13px; height: 8px; }
+.scroll__items img { display: block; -webkit-box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.6); -moz-box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.6); box-shadow: -2px 2px 4px 0 rgba(0, 0, 0, 0.6); }
+.scroll__items p { display: none; }
 
 .scroll__nav { position: absolute; right: 0; top: 0; height: 100px; width: 21px; line-height: 100px; cursor: pointer; background: #40454c; text-align: center; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
 

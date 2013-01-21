@@ -185,17 +185,27 @@
        color: #ffb421;
    }
 }
+.scroll-main {
+   position: relative;
+   height: 100px;
+}
 .scroll {
    position: relative;
    overflow: hidden;
+   margin: 0 auto;
    height: 100px;
+   width: 610px;
 }
 .scroll__wrap {
    position: absolute;
    padding: 10px 0 0 22px;
    width: 2000em;
    overflow: hidden;
-   li {
+}
+.scroll__items {
+   float: left;
+   div {
+      width: 100px;
       position: relative;
       float: left;
       padding: 5px 10px 13px;
@@ -217,7 +227,7 @@
       display: block;
       @include box-shadow(-2px 2px 4px 0 rgba(0,0,0,0.6));
    }
-   div {
+   p {
       display: none;
    }
 }
