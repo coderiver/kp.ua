@@ -5,8 +5,9 @@ $(document).ready(function() {
       }
       else {
          $('.top-bar').removeClass('top-bar_act');
-     }
+      }
    });
+   
    // tab social 
    $(".js-tab-soc-1").show();
    $(".soc-tabs li").click(function(){
