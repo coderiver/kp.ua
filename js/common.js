@@ -1,6 +1,6 @@
 $(document).ready(function() {
    $(window).scroll(function() {
-      if ($('body').scrollTop() > 30) {
+      if ($(window).scrollTop() > 30) {
          $('.top-bar').addClass('top-bar_act');
       }
       else {
