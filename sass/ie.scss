@@ -13,12 +13,20 @@
           display: none;
       }
    }
+   .overlay {
+      background: #000;
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50) !important;
+   }
 }
 // ie7
 *+ html {
     .footer__news li, 
-    .about, .captcha * {
+    .about, .captcha *,
+    .popup .input-text  {
       display: inline;
+    }
+    .btn-reg {
+      line-height: 1 !important;
     }
 }
 

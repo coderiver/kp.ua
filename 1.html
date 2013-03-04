@@ -20,14 +20,71 @@
         <header class="header">
             <!-- top bar -->
             <div class="top-bar">
-                <a href="#" class="top-bar__city">Москва</a>
-                <a href="#" class="top-bar__region">
+                <div class="top-bar__city">
+                    <span>Москва</span>
+                    <div class="drop-list">
+                        <ul>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li class="region"><a href="#">Region</a></li>
+                            <li><a href="#">Region</a></li>
+                            <li><a href="#">Region</a></li>
+                            <li><a href="#">Region</a></li>
+                            <li><a href="#">Region</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="top-bar__date">Сегодня <strong>4 Марта</strong></span>
+                <span class="top-bar__weather">
+                    <a href="#">Погода за окном<i></i></a>
+                    <strong>-12°C</strong>
+                </span>
+                <!-- <a href="#" class="top-bar__region">
                     <i></i>
                     <span>Не ваш регион? Просим сообщить нам</span>
-                </a>
+                </a> -->
                 <div class="top-bar__enter">
-                    <a href="#" class="btn btn_gray">Войти</a>
-                    <a href="#" class="btn btn_gray">Зарегистрироваться</a>
+                    <a href="#" class="btn btn_gray js-enter">Войти</a>
+                    <a href="#" class="btn btn_gray js-reg">Зарегистрироваться</a>
                 </div>
             </div>
             <!-- END top bar -->
@@ -39,13 +96,7 @@
             <!-- widgets -->
             <div class="header__widgets">
                 <a href="#" class="header__logo"></a>
-                <div class="today">
-                    Сегодня 
-                    <strong>14 Января</strong>
-                </div>
-                <div class="weather weather_sun-cloud">
-                    Погода<strong>-7°C</strong>    
-                </div>
+                <a href="mailto:kp@kp.ua" class="header__mailto"><i></i>связь с редакцией</a>
                 <div class="search">
                     <input class="search__text" type="text">
                     <div class="search__submit">
@@ -66,11 +117,13 @@
                     <a href="#">IPAD</a>
                     <a href="#" class="mobile">MOBILE</a>
                 </div>
-                <a href="#" class="weather-webcam">
-                    <i></i>Погода за окном
+                <a href="#" class="header__newspaper">
+                    <strong>Читай свежий номер</strong> 
+                    4 Марта № 30.5
+                    <i></i>
+                </a>
                 </a>
                 <div class="header__soc">
-                    <span>КП в социальных сетях:</span>
                     <a href="#" class="soc soc_ig"></a>
                     <a href="#" class="soc soc_gp"></a>
                     <a href="#" class="soc soc_fb"></a>
@@ -266,8 +319,10 @@
                         <div class="question-day__body">
                             <div class="question-day__left">
                                 <a href="#">Пытаясь излечить смертельно больную жену, американец отправился с ней вокруг света.</a> А вы какие подвиги ради любимых совершали?
+                                <a href="#" class="counter">5 ответов</a>
                             </div>
                             <div class="question-day__right">
+                                <a href="#" class="input-submit">Ответить</a>
                             </div>
                         </div>
                     </div>
@@ -755,7 +810,63 @@
             <span>|</span>
             <a href="#">Подписка</a>
         </div>
-        <div class="calendar"></div>
+        <div class="calendar">
+            <div class="calendar__wrap">
+                <div class="calendar__nav">
+                    <button class="calendar__prev">«</button>
+                    <button class="calendar__next">»</button>
+                    <span class="calendar__month">
+                        <span>Февраль</span>
+                    </span>
+                </div>
+                <ul class="calendar__header">
+                    <li>пн</li>
+                    <li>вт</li>
+                    <li>ср</li>
+                    <li>чт</li>
+                    <li>пт</li>
+                    <li>сб</li>
+                    <li>вс</li>
+                </ul>
+                <ul class="calendar__body">
+                    <li class="inactive">31</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li class="event">13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li class="event">17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li class="event">25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                    <li class="inactive">1</li>
+                    <li class="inactive">2</li>
+                    <li class="inactive">3</li>
+                </ul>
+            </div>
+        </div>
         <div class="footer__soc">
             <span>Комсомолка в социальных сетях:</span>
             <a href="#" class="soc soc_ig"></a>
@@ -925,7 +1036,67 @@
         <img src="img/counters.png" alt="">
     </div>
 </footer>
-</form>
+<div class="overlay"></div>
+<div class="popup js-popup-enter">
+    <div class="popup__header">
+        <strong class="popup__title">Авторизация</strong>
+        <span class="user-counter">
+            <i></i><span>Нас здесь уже: <strong>209187</strong></span>
+        </span>
+    </div>
+    <div class="popup__body">
+        <div class="soc-enter">
+            <div class="soc-enter__text">
+                Вы можете воспользоваться 
+                своим аккаунтом в социальной 
+                сети для входа на сайт
+            </div>
+            <ul>
+                <li><a href="#" class="fb" title="facebook"></a></li>
+                <li><a href="#" class="tw" title="twitter"></a></li>
+                <li><a href="#" class="vk" title="Вконтатке"></a></li>
+                <li><a href="#" class="od" title="Однокласники"></a></li>
+                <li><a href="#" class="mr" title="mail.ru"></a></li>
+                <li><a href="#" class="kp" title="Социальная сеть КП"></a></li>
+            </ul>
+        </div>
+    </div>
+    <button class="popup__close"></button>
+</div>
+<div class="popup js-popup-reg">
+    <div class="popup__header">
+        <strong class="popup__title">Авторизация</strong>
+        <span class="user-counter">
+            <i></i><span>Нас здесь уже: <strong>209187</strong></span>
+        </span>
+    </div>
+    <div class="popup__body">
+        <div class="input-text">
+            <label>Ваше имя</label>
+            <input type="text" placeholder="больше 3 букв">
+        </div>
+        <div class="input-text">
+            <label>E-mail:</label>
+            <input type="text" placeholder="от 6 символов">
+        </div>
+        <div class="input-text">
+            <label>Пароль:</label>
+            <input type="text">
+        </div>
+        <div class="input-text">
+            <label>Введите код с картинки</label>
+            <input type="text">
+        </div>
+        <div class="input-text captcha-img">
+            <img src="img/captcha2.png" alt="">
+        </div>
+        <div class="input-text">
+            <input type="submit" class="btn-reg" value="Зарегистрироваться">
+        </div>
+        <div class="form__note">Красной меткой <span>•</span> отмечены обязательные поля</div>
+    </div>
+    <button class="popup__close"></button>
+</div>
 </form>
 </body>
 </html>

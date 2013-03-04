@@ -26,7 +26,7 @@ $(document).ready(function() {
          next:'.scroll__next',
          prev:'.scroll__prev',
          circular: true, 
-         mousewheel: true,
+         mousewheel: true
    });
 
    $(".scroll__items:first").next().children("div:first").addClass("active");
@@ -43,4 +43,39 @@ $(document).ready(function() {
       $(".photo-day__text").html(img_text);
       return false;
    });
+// ------------- Show/hide city list  ---------------------- //
+   $(".top-bar__city").click(function() {
+      if ($(this).hasClass("js-active")) {
+         $(this).removeClass("js-active");
+         $(this).children(".drop-list").slideUp("fast");
+      }
+      else {
+         $(this).addClass("js-active");
+         $(this).children(".drop-list").slideDown("fast");
+      }
+   });
+// ------------- Show/hide popup enter  ---------------------- //
+   $(".js-enter").click(function() {
+      $(".overlay").fadeIn("fast")
+      $(".js-popup-enter").fadeIn("fast");
+   });
+   $(".popup__close").click(function(){
+      $(this).parent().fadeOut();
+      $(".overlay").fadeOut();
+   });
+   $(".overlay").click(function(){
+      $(this).fadeOut();
+      $(".popup").fadeOut();
+   });
+// ------------- Show/hide popup reg   ---------------------- //
+   $(".js-reg").click(function() {
+      $(".overlay").fadeIn("fast")
+      $(".js-popup-reg").fadeIn("fast");
+   });
+// ------------- Show/hide copy done message   ---------------------- //
+   $(".get-video-code").click(function() {
+      $(this).children("span").css("display", "block");
+   });
+
+
 });

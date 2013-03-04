@@ -2,8 +2,10 @@
 .lteie8 .footer { background: #626a74; }
 .lteie8 .search__text { line-height: 30px; }
 .lteie8 .search span { display: none; }
+.lteie8 .overlay { background: #000; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50) !important; }
 
-* + html .footer__news li, * + html .about, * + html .captcha * { display: inline; }
+* + html .footer__news li, * + html .about, * + html .captcha *, * + html .popup .input-text { display: inline; }
+* + html .btn-reg { line-height: 1 !important; }
 
 * html .top-bar { position: absolute; }
 * html .nav-spec a, * html .nav-spec li, * html .nav a, * html .nav li { display: inline; }

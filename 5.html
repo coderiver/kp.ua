@@ -21,14 +21,71 @@
         <header class="header">
             <!-- top bar -->
             <div class="top-bar">
-                <a href="#" class="top-bar__city">Москва</a>
-                <a href="#" class="top-bar__region">
+                <div class="top-bar__city">
+                    <span>Москва</span>
+                    <div class="drop-list">
+                        <ul>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li><a href="#">City</a></li>
+                            <li class="region"><a href="#">Region</a></li>
+                            <li><a href="#">Region</a></li>
+                            <li><a href="#">Region</a></li>
+                            <li><a href="#">Region</a></li>
+                            <li><a href="#">Region</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="top-bar__date">Сегодня <strong>4 Марта</strong></span>
+                <span class="top-bar__weather">
+                    <a href="#">Погода за окном<i></i></a>
+                    <strong>-12°C</strong>
+                </span>
+                <!-- <a href="#" class="top-bar__region">
                     <i></i>
                     <span>Не ваш регион? Просим сообщить нам</span>
-                </a>
+                </a> -->
                 <div class="top-bar__enter">
-                    <a href="#" class="btn btn_gray">Войти</a>
-                    <a href="#" class="btn btn_gray">Зарегистрироваться</a>
+                    <a href="#" class="btn btn_gray js-enter">Войти</a>
+                    <a href="#" class="btn btn_gray js-reg">Зарегистрироваться</a>
                 </div>
             </div>
             <!-- END top bar -->
@@ -40,13 +97,7 @@
             <!-- widgets -->
             <div class="header__widgets">
                 <a href="#" class="header__logo"></a>
-                <div class="today">
-                    Сегодня 
-                    <strong>14 Января</strong>
-                </div>
-                <div class="weather weather_sun-cloud">
-                    Погода<strong>-7°C</strong>    
-                </div>
+                <a href="mailto:kp@kp.ua" class="header__mailto"><i></i>связь с редакцией</a>
                 <div class="search">
                     <input class="search__text" type="text">
                     <div class="search__submit">
@@ -67,11 +118,13 @@
                     <a href="#">IPAD</a>
                     <a href="#" class="mobile">MOBILE</a>
                 </div>
-                <a href="#" class="weather-webcam">
-                    <i></i>Погода за окном
+                <a href="#" class="header__newspaper">
+                    <strong>Читай свежий номер</strong> 
+                    4 Марта № 30.5
+                    <i></i>
+                </a>
                 </a>
                 <div class="header__soc">
-                    <span>КП в социальных сетях:</span>
                     <a href="#" class="soc soc_ig"></a>
                     <a href="#" class="soc soc_gp"></a>
                     <a href="#" class="soc soc_fb"></a>
@@ -143,9 +196,13 @@
                 </div>
                 <div class="content-img">
                     <img src="http://placesheen.com/675/450" alt="">
-                    <div>
+                    <div class="content-img__main">
                         Самый дешевый камушек, изъятый у фигурантки дела «Оборонсервиса», тянет на 350 тысяч рублей
                         <a href="#">Комментарии: <b>646</b> </a>
+                    </div>
+                    <div class="content-img__info">
+                        <span class="content-img__descr">Мосгорсуд распустил присяжных по делу об убийстве Буданова</span>
+                        <span class="content-img__author">Фото: Сергей <span>ШАХИДЖАНЯН</span></span>
                     </div>
                 </div>
                 <div class="content-info">
@@ -187,6 +244,103 @@
                 <div class="to-home">
                     <i class="icon icon_home"></i>
                     <a href="#">Вернуться на главную</a>
+                </div>
+                <div class="wrap-soc">
+                    <div class="soc-enter">
+                        <ul>
+                            <li><a href="#" class="fb" title="facebook"></a></li>
+                            <li><a href="#" class="tw" title="twitter"></a></li>
+                            <li><a href="#" class="vk" title="Вконтатке"></a></li>
+                            <li><a href="#" class="od" title="Однокласники"></a></li>
+                            <li><a href="#" class="mr" title="mail.ru"></a></li>
+                            <li><a href="#" class="kp" title="Социальная сеть КП"></a></li>
+                        </ul>
+                    </div>
+                    <ul class="send-and-print">
+                        <li><a href="#"><i class="icon icon_email"></i>Выслать по почте</a></li>
+                        <li><a href="#"><i class="icon icon_print"></i>Версия для печати</a></li>
+                    </ul>
+                </div>
+                <div class="com-counter com-counter_news">
+                    КОММЕНТАРИИ
+                    <span>0</span>
+                </div>
+                <ul class="comment">
+                    <li>
+                        <a href="#" class="comment__user-img">
+                            <img src="http://placesheen.com/50/50" alt="">
+                        </a>
+                        <div class="comment__body">
+                            <div class="comment__info">
+                                <a href="#" class="comment__author no-reg">Гость №8885</a>
+                                <span class="comment__date">04.03.2013, 15:59</span>
+                            </div>
+                            <div class="comment__meta">
+                                <div class="comment__author-status">
+                                    <span>Гость <i class="icon icon_guest"></i></span>
+                                    <strong>Как повысить статус?</strong>
+                                    <div class="tooltip">
+                                        <strong>Как поменять статус и перестать быть Гостем на KP.RU?</strong>
+                                        <p>Есть два способа:</p>
+                                        <p>1. Зарегистрироваться на нашем сайте, что займет у вас пару минут.</p>
+                                        <p>2. Войти с помощью своего аккаунта в других соцсетях.</p>
+                                        <p>В любом случае вы получаете не только оригинальное имя, но и становитесь пользователем нашей соцсети MyKP.ru. Это позволит вам комментировать любые заметки на сайте KP.RU с минимальной модерацией, участвовать в конкурсах, заводить сообщества по интересам, делиться своими фотографиями, смотреть видео.</p>
+                                        <a href="#" class="reg">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.    Praesentium tempora consequatur laudantium iusto officia cupiditate    reiciendis ab aut deleniti sunt! Modi fugiat odit quisquam quia minus  saepe facere consequuntur consectetur!</p>
+                            </div>
+                            <div class="comment__bottom">
+                                <button class="btn-gray">Ответить</button>
+                                <a href="#" class="fake" title="Пожаловаться на комментарий"></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="comment__user-img">
+                            <img src="http://placesheen.com/50/50" alt="">
+                        </a>
+                        <div class="comment__body">
+                            <div class="comment__info">
+                                <a href="#" class="comment__author">Человек</a>
+                                <span class="comment__date">04.03.2013, 15:59</span>
+                            </div>
+                            <div class="comment__meta">
+                                <div class="comment__author-status">
+                                    <span>Первопроходец<i class="icon icon_medal"></i></span>
+                                </div>
+                            </div>
+                            <div class="comment__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.    Praesentium tempora consequatur laudantium iusto officia cupiditate    reiciendis ab aut deleniti sunt! Modi fugiat odit quisquam quia minus  saepe facere consequuntur consectetur!</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="add-comment">
+                    <strong class="add-comment__title">
+                        Оставить комментарий
+                        <span class="wtf">
+                            <i></i><span>О модерации</span>
+                            <div class="tooltip">
+                                <strong>Уважаемые читатели!</strong>
+                                <p>Есть два способа:</p>
+                                <p>Ваши сообщения будут опубликованы только после проверки их модератором. Модерация осуществляется круглосуточно без выходных.</p>
+                                <p><b>Комментарии могут быть опубликованы, если они не содержат: </b></p>
+                                <ul>
+                                    <li>— Призывов к насилию, межнациональной розни и прочим нарушениям закона </li>
+                                    <li>— Оскорбление или уничижение России, ее символов и первых лиц. </li>
+                                    <li>— Ненормативной лексики </li>
+                                    <li>— Личных оскорблений или проявлений неуважения в адрес авторов материала, других посетителей форума, иных лиц, а также «Комсомольской правды» </li>
+                                    <li>— Ссылок на какие-либо страницы в интернете </li>
+                                    <li>— Рекламы товаров или услуг, адресов или телефонов и т.п.</li>
+                                </ul>
+                                <p>Администрация сайта оставляет за собой право удалять любые сообщения с форума без объяснения причин</p>
+                                <p>Администрация сайта не несет ответственности за содержание сообщений. Мнение автора сообщения может не совпадать с мнением редакции.</p>
+                            </div>
+                        </span>
+                    </strong>
                 </div>
                 <div class="video video_cont">
                     <div class="video__wrap">
@@ -398,7 +552,63 @@
             <span>|</span>
             <a href="#">Подписка</a>
         </div>
-        <div class="calendar"></div>
+        <div class="calendar">
+            <div class="calendar__wrap">
+                <div class="calendar__nav">
+                    <button class="calendar__prev">«</button>
+                    <button class="calendar__next">»</button>
+                    <span class="calendar__month">
+                        <span>Февраль</span>
+                    </span>
+                </div>
+                <ul class="calendar__header">
+                    <li>пн</li>
+                    <li>вт</li>
+                    <li>ср</li>
+                    <li>чт</li>
+                    <li>пт</li>
+                    <li>сб</li>
+                    <li>вс</li>
+                </ul>
+                <ul class="calendar__body">
+                    <li class="inactive">31</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li class="event">13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li class="event">17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li class="event">25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                    <li class="inactive">1</li>
+                    <li class="inactive">2</li>
+                    <li class="inactive">3</li>
+                </ul>
+            </div>
+        </div>
         <div class="footer__soc">
             <span>Комсомолка в социальных сетях:</span>
             <a href="#" class="soc soc_ig"></a>
