@@ -13,6 +13,6 @@
 * html .header__widgets { margin-bottom: 20px; }
 * html .nav { height: 27px; }
 * html .search { background: none; }
-* html .footer__news li, * html .about, * html .captcha *, * html .nav .active span, * html .nav .active { display: inline; }
+* html .footer__news li, * html .about, * html .captcha *, * html .nav .active span, * html .nav .active, * html .wall__user, * html .wall__user i, * html .wall__com i { display: inline; }
 * html .about { margin-right: 20px; }
 * html .form { height: 100%; }

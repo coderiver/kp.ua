@@ -55,7 +55,10 @@
     .footer__news li, 
     .about, .captcha *, 
     .nav .active span, 
-    .nav .active {
+    .nav .active,
+    .wall__user,
+    .wall__user i,
+    .wall__com i {
       display: inline;
     }
     .about {

@@ -879,6 +879,7 @@
 
 }
 .com-counter {
+    margin-bottom: 15px;
     font-size: 21px;
     font-weight: bold;
     color: #fff;
@@ -1169,6 +1170,16 @@
         
     }
 }
+.video-bar__wrap {
+    position: relative;
+    overflow: hidden;
+    height: 293px;
+    ul {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
 .media-label {
     position: absolute;
     z-index: 2;
@@ -1233,6 +1244,28 @@
         border-bottom: 1px solid #d0d0d0;
     }
 }
+.comment_media {
+    background: #40454c;
+    li {
+        padding-left: 25px;
+        border-bottom: 1px solid #78838f;
+    }
+    .comment__info {
+        .no-reg {
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    .comment__author-status {
+        span {
+            color: #b5bfcb;
+        }
+    }
+    .comment__author {
+        color: #fff;
+        font-weight: bold;
+    }
+}
 .comment__user-img {
     float: left;
     width: 50px;
@@ -1262,7 +1295,8 @@
 }
 .comment__meta {
     float: right;
-    padding-bottom: 10px;
+    text-align: right;
+    padding: 0 10px 10px 0;
     &:hover {
         .tooltip {
             display: block;
@@ -1299,6 +1333,7 @@
     line-height: 1.2;
     border: 1px solid #ccc9c2;
     background: #f5f2e9;
+    text-align: left;
     @include border-radius(5px);
     @include box-shadow(0px 0px 13px 0px #aaa9a9);
     p {
@@ -1359,10 +1394,24 @@
 }
 .add-comment {
     border: 1px solid #dadada;
-    padding: 9px 18px 0px 20px;
+    padding: 9px 18px 25px 20px;
     position: relative;
     margin-bottom: 20px;
     @include background-image(linear-gradient(top, #fff, #f5f5f5));
+    textarea {
+        margin-bottom: 10px;
+        width: 612px;
+    }
+    .char-counter {
+        float: left;
+        padding-top: 7px;
+    }
+    .btn-gray {
+        float: right;
+        height: 30px;
+        width: 180px;
+        font-size: 16px;
+    }
 }
 .add-comment__title {
     position: relative;
@@ -1408,4 +1457,242 @@
         }
     }
 }
-    
+.add-comment__head {
+    overflow: hidden;
+    margin-bottom: 12px;
+    div {
+        overflow: hidden;
+    }
+    .input-text {
+        float: left;
+        input {
+            overflow: hidden;
+            padding: 1px 9px;
+        }
+        span {
+            display: block;
+        }
+    }
+}
+.add-comment__user {
+    float: left;
+    margin-right: 10px;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    @include border-radius(5px);
+}
+.add-comment__soc {
+    float: right;
+    span {
+        float: left;
+        margin-right: 10px;
+        width: 110px;
+        font-size: 12px;
+        color: #78838f;
+        vertical-align: middle;
+    }
+    .soc {
+        margin-top: 6px;
+    }
+}
+.char-counter {
+    color: #78838f;
+    font-size: 12px;
+    span {
+        color: #197b30;
+    }
+}
+.add-comment_media {
+    background: #40454c;
+    border: 0;
+    .add-comment__title {
+        color: #ffb421;
+    }
+    .wtf {
+        span {
+            color: #fff;
+        }
+        
+    }
+    .char-counter {
+        color: #fff;
+        span {
+            color: #25ba48;
+        }
+    }
+}
+.btn-gray_big {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 35px;
+}
+
+.prof {
+    overflow: hidden;
+}
+.prof__left {
+    float: left;
+    margin-right: 20px;
+    padding: 12px 0 20px;
+    width: 175px;
+    background: #e8e9ec;
+    border: 1px solid #b2b5b9;
+    @include box-shadow(inset -7px 0 9px -4px rgba(0,0,0,0.2));
+}
+.prof__right {
+    overflow: hidden;
+}
+.prof__head {
+    text-align: center;
+}
+.prof__img {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+.prof__rate {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 2px 8px 0;
+    background: #fff;
+    i {
+        display: inline-block;
+    } 
+    .positive {
+        @include sized-sprite($icons, rate-pos);
+    }
+    .negative {
+        @include sized-sprite($icons, rate-neg);
+    }
+    span {
+        color: #6d8e02;
+        vertical-align: middle;
+    }
+}
+.prof__name {
+    display: block;
+    padding: 0 14px;
+    font-size: 14px;
+    color: #2e1a00;
+    margin-bottom: 13px;
+}
+.prof__nav {
+    li {
+        border-top: 1px solid #fff;
+        &:first-child {
+            border-top: 0;
+        }
+    }
+    a {
+        display: block;
+        padding: 9px 14px;
+        color: #566069;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+.link-to-blog {
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    background: #dadde0;
+    border: 1px solid #b6b6b6;
+    @include box-shadow(inset 0 -4px 7px -2px rgba(0,0,0,.2));
+    a {
+        border-bottom: 1px dashed;
+        text-decoration: none;
+    }
+}
+.wall {
+    li {
+        position: relative;
+        margin-top: -1px;
+        padding: 10px 16px 12px;
+        border: 1px solid #b6b6b6;
+        .corner {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            @include sized-sprite($icons, corner2);
+        }
+    }
+    a {
+        color: #195ca7;
+        text-decoration: none;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+}
+.wall__meta {
+    color: #3d3d3d;
+    margin-bottom: 5px;
+    i {
+        color: #aaa2a2;
+        font-size: 12px;
+    }
+}
+.wall__user {
+    display: inline-block;
+    i {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: bottom;
+        @include sized-sprite($icons, user2);
+    }
+}
+.wall__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.wall__footer {
+    overflow: hidden;
+}
+.wall__com {
+    float: left;
+    font-size: 11px;
+    text-decoration: none;
+    i {
+        display: inline-block;
+        vertical-align: baseline;
+        @include sized-sprite($icons, comment);
+    }
+    span {
+        color: #000;
+    }
+}
+.wall__opt {
+    font-size: 10px;
+    float: right;
+    i, span {
+        margin-right: 5px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    a {
+        margin-right: 5px;
+    }
+    .plus {
+        color: #7b970f;
+        i {
+            @include sized-sprite($icons, plus);
+        }
+    }
+    .minus {
+        color: #ca1b25;
+        i {
+            @include sized-sprite($icons, minus);
+        }
+    }
+    .favorite {
+        color: #195ca7;
+        i {
+            @include sized-sprite($icons, favorite);
+        }
+    }
+}

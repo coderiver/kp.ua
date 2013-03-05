@@ -77,5 +77,52 @@ $(document).ready(function() {
       $(this).children("span").css("display", "block");
    });
 
+// scroll video
+   $(".video-bar .other__scrollup").click(function(){
+        var way = $(this).parent().children(".video-bar__wrap").children("ul");
+        var top = way.position().top + 100;
+        if (top <= 0) {
+            way.animate({
+                top: top
+            }, 100);
+        }
+        else {}
+   });
+   $(".video-bar .other__scrolldown").click(function(){
+         var way = $(this).parent().children(".video-bar__wrap").children("ul");
+         var top = way.position().top - 100;
+         var list_height = $(".video-bar__wrap").height();
+         if (list_height) {
+            way.animate({
+                top: top
+            }, 100);
+        }
+         else {}
+   });
+
+// scroll news 
+   $(".other__scrollup").click(function(){
+        var way = $(this).parent().children(".other__wrap").children(".other__content");
+        var top = way.position().top + 100;
+        if (top <= 0) {
+            way.animate({
+                top: top
+            }, 100);
+        }
+        else {}
+    });
+    $(".other__scrolldown").click(function(){
+        var way = $(this).parent().children(".other__wrap").children(".other__content");
+        var top = way.position().top - 100;
+        var list_height = $(".other__wrap").height();
+        if (list_height) {
+            way.animate({
+                top: top
+            }, 100);
+        }
+        else {}
+    });
+
+
 
 });

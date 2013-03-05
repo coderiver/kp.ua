@@ -56,58 +56,66 @@
       height: 30px;
       line-height: 30px;
    }
-   .other__content{
-      height: 540px;
-      overflow: hidden;
-      font-size: 14px;
-      dt{
-         font-style: italic;
-      }
-      dd{
-         margin-left: 10px;
-         margin-bottom: 10px;
-         a{
-            text-decoration: none;
-         }
-      }
+
+}
+.other__content{
+   position: absolute;
+   top: 0;
+   left: 0;
+   font-size: 14px;
+   dt{
+      font-style: italic;
    }
-   .other__scrollup,.other__scrolldown{
-      height: 28px;
-      cursor: pointer;
-      line-height: 28px;
-      border-radius: 4px;
-      text-align: center;
-      font-weight: bold;
-      color: #565d73;
-      text-decoration: none;
-      position: absolute;
-      bottom: 8px;
-      left: 8px;
-      border: 1px solid #c8cbcd;
-      width: 32px;
-      @include background-image(linear-gradient(top, #ffffff 0, #e1e1e1 100%));
-      &:hover{
-         @include background-image(linear-gradient(top, #fff 0, #ccc 100%));
+   dd{
+      margin-left: 10px;
+      margin-bottom: 10px;
+      a{
+         text-decoration: none;
       }
-      &:active{
-         @include background-image(linear-gradient(top, #e1e1e1 0, #ffffff 100%));
-      }
-   }
-   .other__scrollup{
-      i{
-         display: inline-block;
-         @include sized-sprite($icons, arrup);
-         position: relative;
-         top: 4px;
-      }
-   }
-   .other__scrolldown{
-      right: 8px;
-      left: auto;
-      width: 190px;
    }
 }
-
+.other__scrollup,
+.other__scrolldown{
+   height: 28px;
+   cursor: pointer;
+   line-height: 28px;
+   border-radius: 4px;
+   text-align: center;
+   font-weight: bold;
+   color: #565d73;
+   text-decoration: none;
+   position: absolute;
+   bottom: 8px;
+   left: 8px;
+   border: 1px solid #c8cbcd;
+   width: 32px;
+   @include user-select();
+   @include background-image(linear-gradient(top, #ffffff 0, #e1e1e1 100%));
+   &:hover{
+      @include background-image(linear-gradient(top, #fff 0, #ccc 100%));
+   }
+   &:active{
+      @include background-image(linear-gradient(top, #e1e1e1 0, #ffffff 100%));
+   }
+}
+.other__scrollup{
+   i{
+      display: inline-block;
+      @include sized-sprite($icons, arrup);
+      position: relative;
+      top: 4px;
+   }
+}
+.other__scrolldown{
+   right: 8px;
+   left: auto;
+   width: 190px;
+}
+.other__wrap {
+   position: relative;
+   height: 540px;
+   overflow: hidden;
+}
 .main-news {
    margin-top: 10px;
    background: #40454c;
