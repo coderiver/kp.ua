@@ -386,7 +386,9 @@ a{
       position: absolute;
       right: -170px;
       top: 0;
-      @include sized-sprite($icons, newspaper);
+      background: url('../img/newspaper.png') 0 0 no-repeat;
+      width: 151px;
+      height: 39px;
    }
 }
 .header__soc {
@@ -941,7 +943,9 @@ a{
 }
 .footer__logo {
    display: block;
-   @include sized-sprite($icons, logo-f);
+   width: 151px;
+   height: 85px;
+   background: url('../img/logo-f.png') 0 0 no-repeat;
 }
 .footer__newspaper {
    padding: 12px 0;
