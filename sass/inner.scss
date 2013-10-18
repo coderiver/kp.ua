@@ -1164,10 +1164,14 @@
     @include box-shadow(inset 0 6px 15px -5px rgba(0, 0, 0, 0.8));
     .video {
         float: left;
+        @include box-sizing(border-box);
         padding: 20px 15px 20px 10px;
         margin-bottom: 0;
         background: #565d66;
-        
+    }
+    .video__wrap {
+        width: 395px;
+        overflow: hidden;
     }
 }
 .video-bar__wrap {
@@ -1895,3 +1899,30 @@
         background: #319701;
     }
 }
+
+.radio {
+    background: #f5f5f5;
+    margin-top: 10px 0;
+    padding: 7px 12px 5px 12px;
+    overflow: hidden;
+}
+.radio__player {
+        margin-bottom: 20px;
+    }
+.radio__nav  {
+    a {
+        display: inline-block;
+        padding: 2px 5px;
+        margin: 0 4px 4px 0;
+        color: #40454c;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    .is-active {
+        background: #f00;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+} 
