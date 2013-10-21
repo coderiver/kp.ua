@@ -914,6 +914,23 @@
 .com-counter_news {
     color: #000;
 }
+.content-title {
+    margin: 0 0 15px;
+    font-size: 26px;
+    color: #1A5CA7;
+    a {
+        display: inline-block;
+        margin-left: 10px;
+        position: relative;
+        top: -5px;
+        color: #fff;
+        font: normal 12px Tahoma, Arial, sans-serif;
+        text-decoration: none;
+        background: #78838f;
+        padding: 3px 9px 4px 9px;
+        @include border-radius(3px);
+    }
+}
 .content-img { 
     position: relative;
     margin: 5px 0;

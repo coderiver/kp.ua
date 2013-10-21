@@ -123,6 +123,25 @@ $(document).ready(function() {
         else {}
     });
 
+    $('.other__content').bind('mousewheel', function (event, delta) {
+        var content = $(this);
+        if (delta < 0) {
+            var top = content.position().top - 100;
+            content.animate({
+                top: top
+            }, 100);
+            return false;
+        } 
+        else {
+            var top = content.position().top + 100;
+            content.animate({
+                top: top
+            }, 100);
+            return false;
+        }
+    });
+
+
 
 
 });

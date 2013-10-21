@@ -419,7 +419,7 @@ a:hover { text-decoration: none; }
 
 .other__scrolldown { right: 8px; left: auto; width: 190px; }
 
-.other__wrap { position: relative; height: 540px; overflow-y: auto; }
+.other__wrap { position: relative; height: 540px; overflow-y: hidden; }
 
 .main-news { margin-top: 10px; background: #40454c; }
 .main-news a { text-decoration: none; }
@@ -728,6 +728,9 @@ a:hover { text-decoration: none; }
 .com-counter span:before { content: ""; position: absolute; left: 4px; bottom: -5px; background: url('../img/icons-sd1c83eb31a.png') 0 -1752px no-repeat; width: 5px; height: 5px; }
 
 .com-counter_news { color: #000; }
+
+.content-title { margin: 0 0 15px; font-size: 26px; color: #1A5CA7; }
+.content-title a { display: inline-block; margin-left: 10px; position: relative; top: -5px; color: #fff; font: normal 12px Tahoma, Arial, sans-serif; text-decoration: none; background: #78838f; padding: 3px 9px 4px 9px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
 
 .content-img { position: relative; margin: 5px 0; }
 .content-img:hover .content-img__info { opacity: 1; }

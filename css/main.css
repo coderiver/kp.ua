@@ -36,7 +36,7 @@
 
 .other__scrolldown { right: 8px; left: auto; width: 190px; }
 
-.other__wrap { position: relative; height: 540px; overflow-y: auto; }
+.other__wrap { position: relative; height: 540px; overflow-y: hidden; }
 
 .main-news { margin-top: 10px; background: #40454c; }
 .main-news a { text-decoration: none; }

@@ -251,6 +251,9 @@
 
 .com-counter_news { color: #000; }
 
+.content-title { margin: 0 0 15px; font-size: 26px; color: #1A5CA7; }
+.content-title a { display: inline-block; margin-left: 10px; position: relative; top: -5px; color: #fff; font: normal 12px Tahoma, Arial, sans-serif; text-decoration: none; background: #78838f; padding: 3px 9px 4px 9px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+
 .content-img { position: relative; margin: 5px 0; }
 .content-img:hover .content-img__info { opacity: 1; }
 .content-img img { display: block; }
