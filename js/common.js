@@ -10,6 +10,7 @@ $(document).ready(function() {
    });
    $(document).click(function() {
         $(".drop-list").hide();
+        $(".js-region-list").hide();
     });
    // tab social 
    $(".js-tab-soc-1").show();
@@ -54,6 +55,15 @@ $(document).ready(function() {
    $(".drop-list").click(function(event){
       event.stopPropagation();
    })
+
+   $(".js-region").click(function(){
+      event.stopPropagation();
+       $(this).parent().find(".js-region-list").slideToggle("fast");
+   });
+   $(".js-region-list").click(function(event){
+      event.stopPropagation();
+   })
+
 // ------------- Show/hide popup enter  ---------------------- //
    $(".js-enter").click(function() {
       $(".overlay").fadeIn("fast")
