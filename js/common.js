@@ -1,5 +1,6 @@
 $(document).ready(function() {
    $(window).scroll(function() {
+      $(".drop-list").hide();
       if ($(window).scrollTop() > 30) {
          $('.top-bar').addClass('top-bar_act');
       }
@@ -7,7 +8,9 @@ $(document).ready(function() {
          $('.top-bar').removeClass('top-bar_act');
       }
    });
-   
+   $(document).click(function() {
+        $(".drop-list").hide();
+    });
    // tab social 
    $(".js-tab-soc-1").show();
    $(".soc-tabs li").click(function(){
@@ -44,16 +47,13 @@ $(document).ready(function() {
       return false;
    });
 // ------------- Show/hide city list  ---------------------- //
-   $(".top-bar__city").click(function() {
-      if ($(this).hasClass("js-active")) {
-         $(this).removeClass("js-active");
-         $(this).children(".drop-list").slideUp("fast");
-      }
-      else {
-         $(this).addClass("js-active");
-         $(this).children(".drop-list").slideDown("fast");
-      }
+   $(".top-bar__city").click(function(event) {
+      event.stopPropagation();
+      $(this).children(".drop-list").slideToggle("fast");
    });
+   $(".drop-list").click(function(event){
+      event.stopPropagation();
+   })
 // ------------- Show/hide popup enter  ---------------------- //
    $(".js-enter").click(function() {
       $(".overlay").fadeIn("fast")

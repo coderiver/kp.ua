@@ -106,6 +106,7 @@
         text-align: center;
     }
     .active {
+        background: #efede7;
         @include background-image(linear-gradient(top, #efede7 0%, #fff 30%));
     }
 }
@@ -124,6 +125,7 @@
         text-transform: uppercase;
         border: 1px solid #d7d7d7;
         border-bottom: 0;
+        background: #efefef;
         @include background-image(linear-gradient(top, #fff 10%, #efefef 100%));
     }
     li {
@@ -134,6 +136,7 @@
     ul{
         padding: 15px 9px;
         border: 1px solid #d7d7d7;
+        background: #efefef;
         @include background-image(linear-gradient(top, #efefef 0%, #fff 15%, #fff 85%, #efefef 100%));
     }
     a {
@@ -183,6 +186,7 @@
         text-transform: uppercase;
         font: bold 15px Tahoma, Arial, Helvetica, sans-serif;
         text-shadow: 1px 2px 3px #383D43;
+        background: #5c646d;
         @include background-image(linear-gradient(top, #788F88 0%, #5C646D 70%));
     }
     ul {
@@ -477,6 +481,7 @@
     ul {
         padding: 0 10px;
         border: 1px solid #dadada;
+        background: #f5f5f5;
         @include background-image(linear-gradient(top, #fff 5%, #f5f5f5 100%));
     }
     li {
@@ -509,6 +514,7 @@
     text-transform: uppercase;
     font: bold 15px/29px Tahoma, Arial, sans-serif;
     text-shadow: 3px 3px 2px #C56D00;
+    background: #eadf0e;
     @include background-image(linear-gradient(top, #ea9f0e 5%, #dd7b00 100%));
 }
 
@@ -579,6 +585,7 @@
         left: 0;
         width: 310px;
         padding: 6px 10px 14px 10px;
+        background: #000;
         background: rgba(0,0,0,0.4);
         font-size: 18px;
         color: #fff;
@@ -767,6 +774,8 @@
     }
     li {
         display: inline-block;
+        width: 200px;
+        overflow: hidden;
         margin: 0 16px 25px 0;
         vertical-align: top;
     }
@@ -836,6 +845,7 @@
     left: 0;
     width: 100%;
     height: 62px;
+    background: #40454c;
     background: rgba(64,69,76,0.8);
     a {
         text-decoration: none;
@@ -926,6 +936,7 @@
     color: #fff;
     font-size: 32px;
     font-weight: bold;
+    background: #000;
     background: rgba(0,0,0,0.6);
     text-shadow: #030303 0px 1px 0px;
     a {
@@ -946,6 +957,7 @@
     width: 220px;
     padding: 10px;
     font-size: 11px;
+    background: #000;
     background: rgba(0,0,0,.6);
     opacity: 0;
     @include transition(all, 1s, ease-in-out);
@@ -1020,7 +1032,20 @@
     text-transform: uppercase;
     color: #576069;
     font-family: Tahoma, Arial,sans-serif;
+    background: #ebebeb;
     @include background-image(linear-gradient(top, #fff 75%, #ebebeb 100%));
+}
+.sidebar {
+    .all-link {
+        margin: 10px 0;
+        text-align: right;
+        a {
+            font-size: 16px;
+            color: #40454C;
+            text-decoration: underline;
+        }
+        
+    }
 }
 .bloger {
     margin-bottom: 60px;
@@ -1143,6 +1168,7 @@
     padding: 5px 10px 8px;
     font-size: 18px;
     line-height: 1.2em;
+    background: #000;
     background: rgba(0,0,0,0.5);
 }
 .actual-news__descr {
@@ -1391,6 +1417,7 @@
     font-weight: bold;
     border: 1px solid #c8cbcd;
     @include border-radius(5px);
+    background: #dfdfdf;
     @include background-image(linear-gradient(top, #fff 30%, #dfdfdf 100%));
     &:hover {
        @include background-image(linear-gradient(top, #dfdfdf 0%, #fff 50%));
@@ -1401,6 +1428,7 @@
     padding: 9px 18px 25px 20px;
     position: relative;
     margin-bottom: 20px;
+    background: #f5f5f5;
     @include background-image(linear-gradient(top, #fff, #f5f5f5));
     textarea {
         margin-bottom: 10px;
@@ -1624,6 +1652,10 @@
             top: 0;
             @include sized-sprite($icons, corner2);
         }
+        img {
+            float: left;
+            margin-right: 20px;
+        }
     }
     a {
         color: #195ca7;
@@ -1816,8 +1848,10 @@
     white-space: nowrap;
     background: #77c82a;
     @include box-shadow(0px 1px 0px 0px #78ca2b);
+    background: #249100;
     @include background-image(linear-gradient(bottom, #249100 5%, #77c82a 100% ));
     &:hover {
+        background: #77c82a;
        @include background-image(linear-gradient(top, #249100 5%, #77c82a 100% )); 
     }
 }
@@ -1958,6 +1992,7 @@
     font-weight: bold;
     font-size: 24px;
     @include box-shadow(0 2px 4px rgba(0,0,0,.2));
+    background: #e07c00;
     @include background-image(linear-gradient(top,#ea9e0c, #e07c00))
 }
 .tv-prog-scroll {
@@ -1986,6 +2021,7 @@
     font-size: 14px;
     border: 1px solid #7b828c;
     @include border-radius(10px);
+    background: #78828e;
     @include background-image(linear-gradient(top,#78828e, #5d616c));
     a {
         color: #fff;

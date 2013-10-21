@@ -82,6 +82,7 @@ a{
    color: #40454c;
    border-bottom: 1px solid #b3b3b3;
    font-family: Tahoma, Arial, Helvetica, sans-serif;
+   background: #ebebeb;
    @include background-image(linear-gradient(top, #fff 75%, #ebebeb 100%));
    a {
       font-size: 18px;
@@ -176,9 +177,9 @@ a{
             text-decoration: underline;
          }
       }
-      .region {
-         border-top: 1px solid #ccc;
-      }
+      // .region {
+      //    border-top: 1px solid #ccc;
+      // }
    }
 }
 
@@ -307,13 +308,16 @@ a{
    font-size: 14px;
    border: 1px solid #bec5cd;
    @include border-radius(3px);
+   background: #fcfcfc;
    @include background-image(linear-gradient(top, #fcfcfc 0%, #d6d7d9 100%));
    &:hover {
        background: #f5f7f8;
    }
    i {
+      position: relative;
+      z-index: 2;
       display: inline-block;
-      margin-left: 6px;
+      margin: 0 2px 0 6px;
       vertical-align: middle;
       @include sized-sprite($icons, glass);
    }
@@ -325,6 +329,14 @@ a{
       right: 0;
       bottom: 0;
       cursor: pointer;
+      @include border-radius(3px);
+      border: 0;
+      background: #fcfcfc;
+      @include background-image(linear-gradient(top, #fcfcfc 0%, #d6d7d9 100%));
+      &:hover {
+         background: #f5f7f8;
+      }
+
    }
 }
 .header__links {
@@ -410,7 +422,7 @@ a{
    overflow: hidden;
    li {
       float: left;
-      margin-right: 8px;
+      margin-right: 7px;
    }
    a {
       color: #565d66;
@@ -514,6 +526,7 @@ a{
    padding-left: 20px;
    overflow: hidden;
    @include box-shadow(inset 0px 7px 7px 0px #8d99a5);
+   background: #727e8a;
    @include background-image(linear-gradient(top, #77838f 5%, #727e8a 100%));
    ul{
       list-style: none;
@@ -608,6 +621,7 @@ a{
    font-size: 13px;
    border: 1px solid #4b5158;
    @include border-radius(3px);
+   background: #8a96a2;
    @include background-image(linear-gradient(top, #8a96a2 0%, #66707a 100%));
    &:hover {
       background: #8a96a2; 
@@ -725,6 +739,7 @@ a{
    font-weight: bold;
    border: 1px solid #c8cbcd;
    @include border-radius(5px);
+   background: #dfdfdf;
    @include background-image(linear-gradient(top, #fff 30%, #dfdfdf 100%));
    &:hover {
       @include background-image(linear-gradient(top, #dfdfdf 0%, #fff 50%));
@@ -768,6 +783,7 @@ a{
    text-align: center;
    cursor: pointer;
    @include border-radius(3px);
+   background: #dfdfdf;
    @include background-image(linear-gradient(top, #fff 30%, #dfdfdf 100%));
    &:hover {
        @include background-image(linear-gradient(top, #dfdfdf 0%, #fff 50%));
@@ -787,7 +803,8 @@ a{
    right: 0;
    bottom: 0;
    cursor: pointer;
-   background: rgba(0,0,0,.6);
+   background: #000;
+   @include opacity(.6)
 }
 .popup {
    display: none;
@@ -938,6 +955,7 @@ a{
    overflow: hidden; 
    font-size: 12px;
    @include box-shadow(inset 0px 5px 6px 0px #40454c);
+   background: #40454c;
    @include background-image(linear-gradient(top, #626a74 5%, #40454c 35%));
 }
 .footer__widgets {
@@ -1185,3 +1203,11 @@ a{
    }
 }
 // ---------------------------------- END Footer ------------------------------------------ //
+
+.lteie8 {
+   .search__submit {
+      i {
+         margin-left: 2px;
+      }
+   }
+}
