@@ -3,7 +3,7 @@
 @import "lib/keyframes";
 
 // gradients for ie
-$experimental-support-for-svg: true;
+//$experimental-support-for-svg: true;
 // global sprites
 $icons: sprite-map("icons/*.png", $spacing: 10px);
 @mixin hide-text{
@@ -14,7 +14,7 @@ $icons: sprite-map("icons/*.png", $spacing: 10px);
 @mixin clr{
   &:after{
     content: ".";
-    display: block;
+    display: block; 
     height: 0;
     clear: both;
     visibility: hidden;
